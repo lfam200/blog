@@ -17,6 +17,11 @@ body{
   margin-left: 0;
   margin-right: 0;
 }
+
+
+.main-menu-sm > li{
+ max-height: 4.2em;
+}
 .video{
     /*background: url('../img/bg-video.png') center;*/
     min-height: 35em;
@@ -816,31 +821,40 @@ canvas {
 }
 
 .cat-item-4{
-    background: yellow;
+    background: url('../img/blog/cat1.png') center no-repeat;
+    background-size: cover;
 }
 .cat-item-5{
-    background: hotpink;
+    background: url('../img/blog/cat2.png') center no-repeat;
+    background-size: cover;
 }
 .cat-item-6{
-    background: deepskyblue;
+    background: url('../img/blog/cat3.png') center no-repeat;
+    background-size: cover;
 }
 .cat-item-7{
-    background: lightgreen;
+    background: url('../img/blog/cat4.png') center no-repeat;
+    background-size: cover;
 }
 .cat-item-8{
-    background: deepskyblue;
+    background: url('../img/blog/cat5.png') center no-repeat;
+    background-size: cover;
 }
 .cat-item-9{
-    background: lightgreen;
+    background: url('../img/blog/cat6.png') center no-repeat;
+    background-size: cover;
 }
 .cat-item-10{
-    background: deepskyblue;
+    background: url('../img/blog/cat7.png') center no-repeat;
+    background-size: cover;
 }
 .cat-item-11{
-    background: hotpink;
+    background: url('../img/blog/cat8.png') center no-repeat;
+    background-size: cover;
 }
 .cat-item-12{
-    background: yellow;
+    background: url('../img/blog/cat9.png') center no-repeat;
+    background-size: cover;
 }
 
 .margin-video-blog{

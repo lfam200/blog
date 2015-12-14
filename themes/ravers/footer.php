@@ -73,25 +73,25 @@
   $(document).ready(function(){
     var a = $('.titulo').attr('id');
     if(a == 'Donate'){
-      $('.menu-item-28').addClass('active');
-    }
-    if(a == 'Why Water'){
-      $('.menu-item-27').addClass('active');
-    }
-    if(a == 'Why Ravers'){
       $('.menu-item-26').addClass('active');
     }
-    if(a == 'Programs'){
+    if(a == 'Why Water'){
       $('.menu-item-25').addClass('active');
     }
-    if(a == 'Dj Birthday'){
+    if(a == 'Why Ravers'){
       $('.menu-item-24').addClass('active');
     }
-    if(a == 'About Us'){
+    if(a == 'Programs'){
       $('.menu-item-23').addClass('active');
     }
-    if(a == 'Blog'){
+    if(a == 'DJ Birthday'){
       $('.menu-item-22').addClass('active');
+    }
+    if(a == 'About Us'){
+      $('.menu-item-21').addClass('active');
+    }
+    if(a == 'Blog'){
+      $('.menu-item-20').addClass('active');
     }
     
   })

@@ -55,9 +55,7 @@ Template Name: Página Donar
           </label>
         </div>
         <div class="text-center margin-bottom-lg" id="kandi"> 
-          <?php 
-              dynamic_sidebar('sidebar-stripe' );
-              ?> 
+         
         </div>
       </div>
     </form>
@@ -85,21 +83,7 @@ Template Name: Página Donar
               </label>
             </div>
             <div class="text-center margin-bottom-lg" id="warriors">
-              <!-- <form action="/donate" method="POST"> -->
-                <script
-                  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                  data-key="{{ Config::get('services.stripe.public') }}"
-                  data-name="International Ravers Charity."
-                  data-description="100% funds water project "
-                  data-image="img/128x128.png"
-                  data-locale="auto"
-                  data-billing-address="true"
-                  data-label="Help Little Warriors"
-                  data-panel-label="Donate"
-                ></script>
-                <input type="hidden" name="amount" id="amount" value="100"/>
-                <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
-              <!-- </form> -->
+              
             </div>
           </div>
           </form>
