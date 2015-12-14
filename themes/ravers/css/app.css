@@ -860,3 +860,6 @@ canvas {
 .margin-video-blog{
     margin-top: 5em;
 }
+.categories_blog .children{
+  display: none;
+}

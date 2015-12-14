@@ -21,7 +21,7 @@ Template Name: Página Blog
       <div class="col-xs-8">
 
         <div class="title_border col-xs-12"></div>
-        <div class="col-xs-12">
+        <div class="col-xs-12 categories_blog">
           <ul class="list-unstyled">
           <?php
           $args = array(
@@ -32,12 +32,11 @@ Template Name: Página Blog
               'show_count'         => 0,
               'hide_empty'         => 0,
               'use_desc_for_title' => 1,
-              'child_of'           => 0,
               'feed'               => '',
               'feed_type'          => '',
               'feed_image'         => '',
               'exclude'            => '1',
-              'exclude_tree'       => '',
+              'exclude_tree'       => '13',
               'include'            => '',
               'hierarchical'       => 1,
               'title_li'           => __( '' ),
