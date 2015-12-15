@@ -863,3 +863,9 @@ canvas {
 .categories_blog .children{
   display: none;
 }
+.a_nolink{
+  color: #fff;
+}
+.a_nolink:hover{
+  color: #fff;
+}

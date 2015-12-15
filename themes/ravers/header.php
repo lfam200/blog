@@ -14,7 +14,7 @@
           the_title();
         }
         else{
-          echo 'Blog';
+          echo single_cat_title("",false);
         }
       } 
     ?> | International Ravers Charity.
