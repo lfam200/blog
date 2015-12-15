@@ -5,7 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' />
   <link rel="icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico">
-  <title><?php if ( is_home()) { echo 'Home'; }else{ the_title();} ?> | International Ravers Charity.</title>
+  <title>
+    <?php 
+      if ( is_home()) { 
+        echo 'Home'; 
+      }else{ 
+        if(the_title()){
+          the_title();
+        }
+        else{
+          echo 'Blog';
+        }
+      } 
+    ?> | International Ravers Charity.
+  </title>
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link href="<?php bloginfo('template_directory'); ?>/bootstrap/css/bootstrap.css" rel="stylesheet">
