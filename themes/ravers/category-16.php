@@ -40,7 +40,7 @@
                       'order'                    => 'ASC',
                       'hide_empty'               => 0,
                       'hierarchical'             => 1,
-                      'exclude'                  => '',
+                      'exclude'                  => '23,24,25,26,27,28,29,30,31,32,33,34',
                       'include'                  => '',
                       'number'                   => '',
                       'taxonomy'                 => 'category',
