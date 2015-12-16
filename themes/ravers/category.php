@@ -33,13 +33,7 @@
         $idObj = get_query_var('cat');
 
         if($idObj>=23 && $idObj<=34){
-          echo "estamos dentro";
-        }
-        else{
-          echo "estamos fuera";
-        }
-
-        $args = array(
+          $args = array(
                       'type'                     => 'post',
                       'child_of'                 => $idObj,
                       'parent'                   => '',
@@ -54,22 +48,20 @@
                       'pad_counts'               => false 
 
                      ); 
-        $categories = get_categories($args); 
-         
-        // print_r($categories);  // para ver toda la informacion contenida en el array $categories
-         
-        // Por ejemplo, imprimimos el nombre de las subcategorias
-        foreach ($categories as $category) : 
-            $cat = $category->name;
-            echo "<div class='col-xs-3'><div class='center-block month-dj'><p class='text-center text-vertical'><a href='".$cat."'>";
-            
-            $rest = substr($cat, 0, 3);
-            echo $rest;
-            echo "</a></p></div></div>";
+          $categories = get_categories($args);
+          foreach ($categories as $category) : 
+              $cat = $category->name;
+              echo "<div class='col-xs-3'><div class='center-block'><p class='text-center text-vertical'><a href='".$cat."'>";
+              
+              $rest = substr($cat, 0, 3);
+              echo $rest;
+              echo "</a></p></div></div>";
 
-        endforeach;
-
-      
+          endforeach;
+        }
+        else{
+          echo "estamos fuera";
+        }
       ?>
       </div>
       <div class="col-xs-11">
