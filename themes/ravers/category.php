@@ -32,7 +32,7 @@
       <?php
         $idObj = get_query_var('cat');
 
-        if($idObj>=23 && $idObj<=34){
+        if($idObj>=13 && $idObj<=34){
           $args = array(
                       'type'                     => 'post',
                       'child_of'                 => $idObj,

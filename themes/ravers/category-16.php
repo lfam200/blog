@@ -54,7 +54,7 @@
         // Por ejemplo, imprimimos el nombre de las subcategorias
         foreach ($categories as $category) : 
             $cat = $category->name;
-            echo "<div class='col-xs-3'><div class='center-block month-dj'><p class='text-center text-vertical'><a href='".$cat."'>";
+            echo "<div class='col-xs-3'><div class='center-block month-dj'><p class='text-center text-vertical texto-blanco'><a href='".$cat."'>";
             
             $rest = substr($cat, 0, 3);
             echo $rest;
