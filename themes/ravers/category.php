@@ -30,13 +30,15 @@
       </h1>
       <div class="col-xs-12">
       <?php
-        if(get_query_var('cat') > 22 ||  get_query_var('cat') < 35 )
-         {
-
-
-     
-        // Obtenemos la informacion de las subcategorias contenidas en la categoria "work"
         $idObj = get_query_var('cat');
+
+        if($idObj>=23){
+          echo "estamos dentro";
+        }
+        else{
+          echo "estamos fuera";
+        }
+
         $args = array(
                       'type'                     => 'post',
                       'child_of'                 => $idObj,
@@ -67,10 +69,7 @@
 
         endforeach;
 
-      }else
-      {
-        echo "prueba"
-      }
+      
       ?>
       </div>
       <div class="col-xs-11">
