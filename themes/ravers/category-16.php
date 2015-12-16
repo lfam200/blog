@@ -28,7 +28,7 @@
         echo single_cat_title("",false); 
       ?>
       </h1>
-      <div class="col-xs-10 col-xs-offset-1">
+      <div class="col-xs-12">
         <?php
         // Obtenemos la informacion de las subcategorias contenidas en la categoria "work"
         $idObj = get_query_var('cat');
@@ -41,7 +41,7 @@
                       'hide_empty'               => 0,
                       'hierarchical'             => 1,
                       'exclude'                  => '',
-                      'include'                  => '23,24,25,26,27,28,29,30,31,32,33,34',
+                      'include'                  => '',
                       'number'                   => '',
                       'taxonomy'                 => 'category',
                       'pad_counts'               => false 
@@ -66,6 +66,97 @@
       <div class="col-xs-11">
         <p class="text-right text-large">Suscribe to our <strong>DJ Birthday Calendar</strong></p>
       </div>
+      <div class="col-xs-12">
+        <div class="cat col-xs-4  text-left"><p class="texto-blanco text-large">Birthday's wishes</p></div>
+      </div>
+      <div class="col-xs-8">
+        <div class="title_border col-xs-12">
+          <!-- Start the Loop. -->
+          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+            <!-- Test if the current post is in category 3. -->
+            <!-- If it is, the div box is given the CSS class "post-cat-three". -->
+            <!-- Otherwise, the div box is given the CSS class "post". -->
+
+            <?php if ( in_category( '3' ) ) : ?>
+              <div class="post-cat-three">
+            <?php else : ?>
+              <div class="post">
+            <?php endif; ?>
+
+
+            <!-- Display the Title as a link to the Post's permalink. -->
+
+            <h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+
+
+            <!-- Display the date (November 16th, 2009 format) and a link to other posts by this posts author. -->
+
+            <small><?php the_time('F jS, Y'); ?> by <?php the_author_posts_link(); ?></small>
+
+
+            <!-- Display the Post's content in a div box. -->
+
+            <div class="entry">
+              <?php the_content(); ?>
+            </div>
+
+
+            <!-- Display a comma separated list of the Post's Categories. -->
+
+            <p class="postmetadata"><?php _e( 'Posted in' ); ?> <?php the_category( ', ' ); ?></p>
+            </div> <!-- closes the first div box -->
+
+
+            <!-- Stop The Loop (but note the "else:" - see next line). -->
+
+          <?php endwhile; else : ?>
+
+
+            <!-- The very first "if" tested to see if there were any Posts to -->
+            <!-- display.  This "else" part tells what do if there weren't any. -->
+            <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+
+
+            <!-- REALLY stop The Loop. -->
+          <?php endif; ?>
+        </div>
+        
+      </div> 
+      <div class="col-xs-12 dot_border margin-bottom-lg">
+        <h2 class="text-center margin-bottom">Suscribe DJs</h2>
+        <figure>
+          <img src="<?php bloginfo('template_directory'); ?>/img/ir-col.png" alt="International Ravers" class="center-block img-responsive margin-top-lg margin-bottom-lg" width="50%">
+        </figure>
+        <div class="col-xs-12 margin-bottom-lg">
+          <div class="col-xs-9">
+            <p class="text-large"># of suscribes:</p>
+          </div> 
+          <div class="col-xs-3 text-right">
+            <button class="btn btn-success text-large">Go to our DJs</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12">
+        <div class="col-xs-12 margin-bottom-lg">
+          <div class="col-xs-4 content-blue">
+            <p class="text-center margin-top texto-blanco text-large">invite you<br> DJ</p>
+            <p class="text-center margin-top margin-bottom-lg ">
+              <a href="https://www.facebook.com/internationalravers" class="icon-green"><i class="fa fa-facebook-official fa-4x"></i></a>
+              <a href="https://www.facebook.com/internationalravers" class="icon-green"><i class="fa fa-twitter-square fa-4x"></i></a>
+            </p>  
+          </div>
+          <div class="col-xs-4">
+            <p class="text-center margin-top texto-blanco text-large">or</p>
+          </div>
+          <div class="col-xs-4 content-blue">
+            <p class="text-center margin-top texto-blanco text-large">suscribe to our  <br>DJ calendar</p>
+            <p class="text-center margin-top margin-bottom-lg">
+              <button class="btn btn-success text-large">send us an a mail</button>
+            </p>
+          </div>
+        </div>
+      </div> 
     </div>
   </div>
 </div>

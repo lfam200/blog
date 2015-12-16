@@ -890,4 +890,23 @@ canvas {
 
 .text-large{
   font-size: 1.6em;
+  margin-bottom: 0;
+}
+
+.dot_border{
+  /*border: #000 ;*/
+  border-top-style: dotted;
+  border-bottom-style: dotted;
+
+}
+
+.content-blue{
+  background: #0B6FFF;
+  /*width: 100%;*/
+  min-height: 12em;
+  border-radius: 1em;
+}
+
+.icon-green{
+  color: #1BC55B;
 }
