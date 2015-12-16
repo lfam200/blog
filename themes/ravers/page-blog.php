@@ -112,8 +112,6 @@ Template Name: Página Blog
 <script>
   $(document).ready(function(){
     $('.cat-item').addClass("col-xs-4")
-
-
   });
 </script>
 </body>

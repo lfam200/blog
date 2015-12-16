@@ -869,3 +869,21 @@ canvas {
 .a_nolink:hover{
   color: #fff;
 }
+
+.month-dj{
+  width: 10em;
+  height: 10em;
+  background: red;
+  border-radius: 15em;
+  margin-bottom: 2em;
+}
+
+.text-vertical{
+  line-height: 10em;
+}
+
+.text-vertical>a{
+
+  font-size: 2em;
+  color: #fff;
+}

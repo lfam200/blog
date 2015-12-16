@@ -20,23 +20,47 @@
     </div>
   </div>
 </div>
-<div class="white">
-  <div class="container">
-    <div class="row">
-      <h1 class="text-center">
-      <?php 
-        echo single_cat_title("",false); 
-        
 
-      ?>
-      </h1>
-      <div>
+<div class="content">
+  <div class="container">
+    <div class="row rowsombra">
+      <div class="col-xs-12">
+      <?php
+      // Obtenemos la informacion de las subcategorias contenidas en la categoria "work"
+      $idObj = get_query_var('cat');
+      $args = array(
+                    'type'                     => 'post',
+                    'child_of'                 => $idObj,
+                    'parent'                   => '',
+                    'orderby'                  => 'name',
+                    'order'                    => 'ASC',
+                    'hide_empty'               => 0,
+                    'hierarchical'             => 1,
+                    'exclude'                  => '',
+                    'include'                  => '',
+                    'number'                   => '',
+                    'taxonomy'                 => 'category',
+                    'pad_counts'               => false 
+
+                   ); 
+      $categories = get_categories($args); 
        
-      </div>
+      // print_r($categories);  // para ver toda la informacion contenida en el array $categories
+       
+      // Por ejemplo, imprimimos el nombre de las subcategorias
+      foreach ($categories as $category) : 
+          echo $category->name;
+      endforeach;
+      ?>
+      </div> 
+    </div>  
+
       
-    </div>
+        
+      </div>
   </div>
-</div>
+</div>        
+
 <?php get_footer(); ?>
 </body>
 </html>
