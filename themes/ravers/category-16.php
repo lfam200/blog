@@ -28,7 +28,7 @@
         echo single_cat_title("",false); 
       ?>
       </h1>
-      <div >
+      <div class="col-xs-10 col-xs-offset-1">
         <?php
         // Obtenemos la informacion de las subcategorias contenidas en la categoria "work"
         $idObj = get_query_var('cat');
