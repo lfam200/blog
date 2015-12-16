@@ -23,7 +23,7 @@
 <div class="white">
   <div class="container">
     <div class="row rowsombra">
-      <h1 class="text-center margin-bottom-lg margin-top">
+      <h1 class="text-center margin-bottom margin-top">
       <?php 
         echo single_cat_title("",false); 
       ?>
@@ -32,7 +32,7 @@
       <?php
         $idObj = get_query_var('cat');
 
-        if($idObj>=13 && $idObj<=34){
+        if($idObj>=23 && $idObj<=34){
           $args = array(
                       'type'                     => 'post',
                       'child_of'                 => $idObj,
@@ -49,16 +49,86 @@
 
                      ); 
           $categories = get_categories($args);
-          foreach ($categories as $category) : 
+        ?>
+        <div class="col-xs-8 col-xs-offset-2">
+          <table width="100%" border="1" id="calendario_tabla"> 
+            
+              <tr>
+                <th class="cal_1 text-center cal-dj text-large">Sun</th>
+                <th class="cal_2 text-center cal-dj text-large">Mon</th>
+                <th class="cal_3 text-center cal-dj text-large">Tue</th>
+                <th class="cal_4 text-center cal-dj text-large">Wed</th>
+                <th class="cal_5 text-center cal-dj text-large">Thu</th>
+                <th class="cal_6 text-center cal-dj text-large">Fri</th>
+                <th class="cal_7 text-center cal-dj text-large">Sat</th>
+              </tr>
+            
+        <?php 
+          echo "<tr>"; 
+          date_default_timezone_set('UTC');
+          $f = $idObj - 22;
+          $d = date("D", mktime(0, 0, 0, $f, 1, 2015));
+          if($d == 'Sun'){
+            $v = 1;  
+          }
+          if($d == 'Mon'){
+            echo "<td class='cal_1 text-right cal-dj'></td>";
+            $v = 2;  
+          }
+          if($d == 'Tue'){
+            echo "<td class='cal_1 text-right cal-dj'></td><td class='cal_2 text-right cal-dj'></td>";
+            $v = 3;  
+          }
+          if($d == 'Wed'){
+            echo "<td class='cal_1 text-right cal-dj'></td><td class='cal_2 text-right cal-dj'></td><td class='cal_3 text-right cal-dj'></td>";
+            $v = 4;  
+          }
+          if($d == 'Thu'){
+            echo "<td class='cal_1 text-right cal-dj'></td><td class='cal_2 text-right cal-dj'></td><td class='cal_3 text-right cal-dj'></td><td class='cal_4 text-right cal-dj'></td>";
+            $v = 5;  
+          }
+          if($d == 'Fri'){
+            echo "<td class='cal_1 text-right cal-dj'></td><td class='cal_2 text-right cal-dj'></td><td class='cal_3 text-right cal-dj'></td><td class='cal_4 text-right cal-dj'></td><td class='cal_5 text-right cal-dj'></td>";
+            $v = 6;  
+          }
+          if($d == 'Sat'){
+            echo "<td class='cal_1 text-right cal-dj'></td><td class='cal_2 text-right cal-dj'></td><td class='cal_3 text-right cal-dj'></td><td class='cal_4 text-right cal-dj'></td><td class='cal_5 text-right cal-dj'></td><td class='cal_6 text-right cal-dj'></td>";
+            $v = 7;  
+          }
+
+
+          
+
+          foreach ($categories as $clave => $category) : 
+              
               $cat = $category->name;
-              echo "<div class='col-xs-3'><div class='center-block'><p class='text-center text-vertical'><a href='".$cat."'>";
               
               $rest = substr($cat, 0, 3);
-              echo $rest;
-              echo "</a></p></div></div>";
+              $mod = ($clave+$v) % 7;
+              $id = $clave+$v;
+              if($id > 7){
+                $id = $id % 7;
+                if($id == 0){
+                  $id = 7;
+                }
+              }
+              if($mod == 0){
+                echo "<td class ='cal_".$id." text-right cal-dj'>".$rest."</td></tr><tr>";
 
+              }else{
+                echo "<td class ='cal_".$id." text-right cal-dj'>".$rest."</td>";
+              }
+              
+              
           endforeach;
+        ?>
+          </tr>
+        </table>
+        
+        </div>
+        <?php
         }
+
         else{
           echo "estamos fuera";
         }

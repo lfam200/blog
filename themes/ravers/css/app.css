@@ -910,3 +910,34 @@ canvas {
 .icon-green{
   color: #1BC55B;
 }
+.cal_1{
+  background: #FDBC1B;
+}
+.cal_2{
+  background: #0E73FF;
+}
+.cal_3{
+  background: #2DC560;
+}
+.cal_4{
+  background: #FB0052;
+}
+.cal_5{
+  background: #FDBC1B;
+}
+.cal_6{
+  background: #0E73FF;
+}
+.cal_7{
+  background: #2DC560;
+}
+
+.cal-dj{
+  color: #ffffff;
+  height: 4.5em;
+  width: 4.5em;
+}
+
+.calendario_tabla > td{
+  vertical-align: top;
+}
