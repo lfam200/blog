@@ -28,7 +28,7 @@
         echo single_cat_title("",false); 
       ?>
       </h1>
-      <div >
+      <div class="col-xs-12">
         <?php
         // Obtenemos la informacion de las subcategorias contenidas en la categoria "work"
         $idObj = get_query_var('cat');
@@ -63,7 +63,9 @@
         endforeach;
         ?>
       </div>
-      
+      <div class="col-xs-11">
+        <p class="text-right text-large">Suscribe to our <strong>DJ Birthday Calendar</strong></p>
+      </div>
     </div>
   </div>
 </div>

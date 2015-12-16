@@ -887,3 +887,7 @@ canvas {
   font-size: 2em;
   color: #fff;
 }
+
+.text-large{
+  font-size: 1.6em;
+}

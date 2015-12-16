@@ -63,7 +63,9 @@
         endforeach;
         ?>
       </div>
-      
+      <div class="col-xs-11">
+        <p class="text-right text-large">Suscribe to our <strong>DJ Birthday Calendar</strong></p>
+      </div>
     </div>
   </div>
 </div>
