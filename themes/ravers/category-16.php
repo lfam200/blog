@@ -78,7 +78,7 @@
             <!-- If it is, the div box is given the CSS class "post-cat-three". -->
             <!-- Otherwise, the div box is given the CSS class "post". -->
 
-            <?php if ( in_category( '3' ) ) : ?>
+            <?php if ( in_category( '18' ) ) : ?>
               <div class="post-cat-three">
             <?php else : ?>
               <div class="post">

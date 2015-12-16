@@ -29,7 +29,12 @@
       ?>
       </h1>
       <div class="col-xs-12">
-        <?php
+      <?php
+        if(get_query_var('cat') > 22 ||  get_query_var('cat') < 35 )
+         {
+
+
+     
         // Obtenemos la informacion de las subcategorias contenidas en la categoria "work"
         $idObj = get_query_var('cat');
         $args = array(
@@ -61,7 +66,12 @@
             echo "</a></p></div></div>";
 
         endforeach;
-        ?>
+
+      }else
+      {
+        echo "prueba"
+      }
+      ?>
       </div>
       <div class="col-xs-11">
         <p class="text-right text-large">Suscribe to our <strong>DJ Birthday Calendar</strong></p>
