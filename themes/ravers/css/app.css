@@ -938,6 +938,10 @@ canvas {
   width: 4.5em;
 }
 
+.cal-dj-head{
+  height: 2.5em;
+}
+
 .calendario_tabla > td{
   vertical-align: top;
 }

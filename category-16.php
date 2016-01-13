@@ -23,17 +23,16 @@
 <div class="white">
   <div class="container">
     <div class="row rowsombra">
-      <h1 class="text-center margin-bottom margin-top">
+      <h1 class="text-center margin-bottom-lg margin-top">
       <?php 
         echo single_cat_title("",false); 
       ?>
       </h1>
       <div class="col-xs-12">
-      <?php
+        <?php
+        // Obtenemos la informacion de las subcategorias contenidas en la categoria "work"
         $idObj = get_query_var('cat');
-
-        if($idObj>=23 && $idObj<=34){
-          $args = array(
+        $args = array(
                       'type'                     => 'post',
                       'child_of'                 => $idObj,
                       'parent'                   => '',
@@ -42,97 +41,27 @@
                       'hide_empty'               => 0,
                       'hierarchical'             => 1,
                       'exclude'                  => '',
-                      'include'                  => '',
+                      'include'                  => '23,24,25,26,27,28,29,30,31,32,33,34',
                       'number'                   => '',
                       'taxonomy'                 => 'category',
                       'pad_counts'               => false 
 
                      ); 
-          $categories = get_categories($args);
-        ?>
-        <div class="col-xs-8 col-xs-offset-2">
-          <table width="100%" border="1" id="calendario_tabla"> 
+        $categories = get_categories($args); 
+         
+        // print_r($categories);  // para ver toda la informacion contenida en el array $categories
+         
+        // Por ejemplo, imprimimos el nombre de las subcategorias
+        foreach ($categories as $category) : 
+            $cat = $category->name;
+            echo "<div class='col-xs-3'><div class='center-block month-dj'><p class='text-center text-vertical texto-blanco'><a class='a_nolink' href='".$cat."'>";
             
-              <tr>
-                <th class="cal_1 text-center cal-dj-head text-large">Sun</th>
-                <th class="cal_2 text-center cal-dj-head text-large">Mon</th>
-                <th class="cal_3 text-center cal-dj-head text-large">Tue</th>
-                <th class="cal_4 text-center cal-dj-head text-large">Wed</th>
-                <th class="cal_5 text-center cal-dj-head text-large">Thu</th>
-                <th class="cal_6 text-center cal-dj-head text-large">Fri</th>
-                <th class="cal_7 text-center cal-dj-head text-large">Sat</th>
-              </tr>
-            
-        <?php 
-          echo "<tr>"; 
-          date_default_timezone_set('UTC');
-          $f = $idObj - 22;
-          $d = date("D", mktime(0, 0, 0, $f, 1, 2015));
-          if($d == 'Sun'){
-            $v = 1;  
-          }
-          if($d == 'Mon'){
-            echo "<td class='cal_1 text-right cal-dj'></td>";
-            $v = 2;  
-          }
-          if($d == 'Tue'){
-            echo "<td class='cal_1 text-right cal-dj'></td><td class='cal_2 text-right cal-dj'></td>";
-            $v = 3;  
-          }
-          if($d == 'Wed'){
-            echo "<td class='cal_1 text-right cal-dj'></td><td class='cal_2 text-right cal-dj'></td><td class='cal_3 text-right cal-dj'></td>";
-            $v = 4;  
-          }
-          if($d == 'Thu'){
-            echo "<td class='cal_1 text-right cal-dj'></td><td class='cal_2 text-right cal-dj'></td><td class='cal_3 text-right cal-dj'></td><td class='cal_4 text-right cal-dj'></td>";
-            $v = 5;  
-          }
-          if($d == 'Fri'){
-            echo "<td class='cal_1 text-right cal-dj'></td><td class='cal_2 text-right cal-dj'></td><td class='cal_3 text-right cal-dj'></td><td class='cal_4 text-right cal-dj'></td><td class='cal_5 text-right cal-dj'></td>";
-            $v = 6;  
-          }
-          if($d == 'Sat'){
-            echo "<td class='cal_1 text-right cal-dj'></td><td class='cal_2 text-right cal-dj'></td><td class='cal_3 text-right cal-dj'></td><td class='cal_4 text-right cal-dj'></td><td class='cal_5 text-right cal-dj'></td><td class='cal_6 text-right cal-dj'></td>";
-            $v = 7;  
-          }
+            $rest = substr($cat, 0, 3);
+            echo $rest;
+            echo "</a></p></div></div>";
 
-
-          
-
-          foreach ($categories as $clave => $category) : 
-              
-              $cat = $category->name;
-              
-              $rest = substr($cat, 0, 3);
-              $mod = ($clave+$v) % 7;
-              $id = $clave+$v;
-              if($id > 7){
-                $id = $id % 7;
-                if($id == 0){
-                  $id = 7;
-                }
-              }
-              if($mod == 0){
-                echo "<td class ='cal_".$id." text-right cal-dj'><a href=".$rest.">".$rest."</a></td></tr><tr>";
-
-              }else{
-                echo "<td class ='cal_".$id." text-right cal-dj'><a href=".$rest.">".$rest."</a></td>";
-              }
-              
-              
-          endforeach;
+        endforeach;
         ?>
-          </tr>
-        </table>
-        
-        </div>
-        <?php
-        }
-
-        else{
-          echo "estamos fuera";
-        }
-      ?>
       </div>
       <div class="col-xs-11">
         <p class="text-right text-large">Suscribe to our <strong>DJ Birthday Calendar</strong></p>
@@ -149,7 +78,7 @@
             <!-- If it is, the div box is given the CSS class "post-cat-three". -->
             <!-- Otherwise, the div box is given the CSS class "post". -->
 
-            <?php if ( in_category( '3' ) ) : ?>
+            <?php if ( in_category( '18' ) ) : ?>
               <div class="post-cat-three">
             <?php else : ?>
               <div class="post">

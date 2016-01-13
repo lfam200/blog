@@ -19,18 +19,6 @@ msgstr "Agregar un comentario<span class=\"screen-reader-text\"> en %s</span>"
 msgid "https://wordpress.org/themes/twentyfifteen/"
 msgstr "https://wordpress.org/themes/twentyfifteen/"
 
-#: single.php:34
-msgid "Next post:"
-msgstr "Entrada siguiente:"
-
-#: single.php:37
-msgid "Previous post:"
-msgstr "Entrada anterior:"
-
-#: inc/customizer.php:47 inc/customizer.php:63 inc/customizer.php:68
-msgid "Applied to the header on small screens and the sidebar on wide screens."
-msgstr "Aplicado a la cabecera en pantallas pequeñas y al sidebar en pantallas anchas."
-
 #: single.php:36
 msgid "Previous"
 msgstr "Anterior"
@@ -38,6 +26,10 @@ msgstr "Anterior"
 #: single.php:33
 msgid "Next"
 msgstr "Siguiente"
+
+#: 404.php:21
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Al parecer nada se encontró en esa ubicación. ¿Tal vez desea intentar otra búsqueda?"
 
 #: inc/template-tags.php:91 inc/template-tags.php:99
 msgctxt "Used between list items, there is a space after the comma."
@@ -55,113 +47,6 @@ msgstr "Siguiente imagen"
 #: inc/template-tags.php:23
 msgid "Comment navigation"
 msgstr "Navegación de comentarios"
-
-#: search.php:18
-msgid "Search Results for: %s"
-msgstr "Resultados de búsqueda para: %s"
-
-#. Author of the plugin/theme
-msgid "the WordPress team"
-msgstr "el equipo de WordPress"
-
-#: header.php:43
-msgid "Menu and widgets"
-msgstr "Menú y widgets"
-
-#: image.php:84
-msgctxt "Parent post link"
-msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
-msgstr "<span class=\"meta-nav\">Publicado en</span><span class=\"post-title\">%title</span>"
-
-#: inc/back-compat.php:37 inc/back-compat.php:47 inc/back-compat.php:60
-msgid "Twenty Fifteen requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again."
-msgstr "Twenty Fifteen requiere de al menos la versión 4.1 de WordPress. Usted está usando la versión %s. Por favor, actualice e inténtelo nuevamente."
-
-#: inc/customizer.php:31
-msgid "Base Color Scheme"
-msgstr "Esquema de color básico"
-
-#: inc/customizer.php:46
-msgid "Header and Sidebar Text Color"
-msgstr "Color del texto de la cabecera y del sidebar"
-
-#: inc/customizer.php:62
-msgid "Header and Sidebar Background Color"
-msgstr "Color de fondo de la cabecera y del sidebar"
-
-#: inc/customizer.php:92
-msgid "Default"
-msgstr "Por defecto"
-
-#: inc/customizer.php:103
-msgid "Dark"
-msgstr "Oscuro"
-
-#: inc/customizer.php:114
-msgid "Yellow"
-msgstr "Amarillo"
-
-#: inc/customizer.php:125
-msgid "Pink"
-msgstr "Rosado"
-
-#: inc/customizer.php:136
-msgid "Purple"
-msgstr "Púrpura"
-
-#: inc/customizer.php:147
-msgid "Blue"
-msgstr "Azul"
-
-#: inc/template-tags.php:26
-msgid "Older Comments"
-msgstr "Comentarios anteriores"
-
-#: inc/template-tags.php:30
-msgid "Newer Comments"
-msgstr "Comentarios recientes"
-
-#: inc/template-tags.php:49
-msgid "Featured"
-msgstr "Destacado"
-
-#: inc/template-tags.php:55
-msgctxt "Used before post format."
-msgid "Format"
-msgstr "Formato"
-
-#: inc/template-tags.php:76
-msgctxt "Used before publish date."
-msgid "Posted on"
-msgstr "Publicado el"
-
-#: inc/template-tags.php:85
-msgctxt "Used before post author name."
-msgid "Author"
-msgstr "Autor"
-
-#: inc/template-tags.php:94
-msgctxt "Used before category names."
-msgid "Categories"
-msgstr "Categorías"
-
-#: inc/template-tags.php:102
-msgctxt "Used before tag names."
-msgid "Tags"
-msgstr "Etiquetas"
-
-#: inc/template-tags.php:113
-msgctxt "Used before full size attachment link."
-msgid "Full size"
-msgstr "Tamaño completo"
-
-#. Theme Name of the plugin/theme
-msgid "Twenty Fifteen"
-msgstr "Twenty Fifteen"
-
-#. Description of the plugin/theme
-msgid "Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer."
-msgstr "Nuestro tema por defecto de 2015 es limpio, enfocado a los blogs y con un diseño claro. La tipografía de Twenty Finten es sencilla, clara y legible en una gran variedad de tamaños de pantalla, además está disponible en muchos idiomas. Lo hemos diseñado pensando primero en su uso en dispositivos móviles, lo que implica que su contenido ocupará el centro de la escena independientemente de cómo lleguen sus visitantes, ya sea desde un móvil inteligente, una tableta, un portátil o un ordenador de escritorio."
 
 #: comments.php:53
 msgid "Comments are closed."
@@ -203,6 +88,39 @@ msgstr "Lo sentimos, pero ningún resultado corresponde a sus criterios de búsq
 #: content-none.php:31
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr "Parece que no podemos encontrar lo que está buscando. Tal vez buscando puede que le ayude."
+
+#: search.php:18
+msgid "Search Results for: %s"
+msgstr "Resultados de búsqueda para: %s"
+
+#. Author of the plugin/theme
+msgid "the WordPress team"
+msgstr "el equipo de WordPress"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "¡Vaya! No se pudo encontrar esta página."
+
+#: archive.php:49 index.php:46 search.php:38
+msgid "Previous page"
+msgstr "Página anterior"
+
+#: archive.php:50 index.php:47 search.php:39
+msgid "Next page"
+msgstr "Siguiente página"
+
+#: archive.php:51 content-link.php:40 content-page.php:29 content.php:42
+#: image.php:63 index.php:48 search.php:40
+msgid "Page"
+msgstr "Página"
+
+#: author-bio.php:12
+msgid "Published by"
+msgstr "Publicado por"
+
+#: author-bio.php:34
+msgid "View all posts by %s"
+msgstr "Ver todas las entradas de %s"
 
 #: comments.php:28
 msgctxt "comments title"
@@ -274,31 +192,113 @@ msgstr "expandir el menú inferior"
 msgid "collapse child menu"
 msgstr "plegar menú inferior"
 
-#: 404.php:21
-msgid "It looks like nothing was found at this location. Maybe try a search?"
-msgstr "Al parecer nada se encontró en esa ubicación. ¿Tal vez desea intentar otra búsqueda?"
+#: header.php:43
+msgid "Menu and widgets"
+msgstr "Menú y widgets"
 
-#: 404.php:17
-msgid "Oops! That page can&rsquo;t be found."
-msgstr "¡Vaya! No se pudo encontrar esta página."
+#: image.php:84
+msgctxt "Parent post link"
+msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
+msgstr "<span class=\"meta-nav\">Publicado en</span><span class=\"post-title\">%title</span>"
 
-#: archive.php:49 index.php:46 search.php:38
-msgid "Previous page"
-msgstr "Página anterior"
+#: inc/back-compat.php:37 inc/back-compat.php:47 inc/back-compat.php:60
+msgid "Twenty Fifteen requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again."
+msgstr "Twenty Fifteen requiere de al menos la versión 4.1 de WordPress. Usted está usando la versión %s. Por favor, actualice e inténtelo nuevamente."
 
-#: archive.php:50 index.php:47 search.php:39
-msgid "Next page"
-msgstr "Siguiente página"
+#: inc/customizer.php:31
+msgid "Base Color Scheme"
+msgstr "Esquema de color básico"
 
-#: archive.php:51 content-link.php:40 content-page.php:29 content.php:42
-#: image.php:63 index.php:48 search.php:40
-msgid "Page"
-msgstr "Página"
+#: inc/customizer.php:46
+msgid "Header and Sidebar Text Color"
+msgstr "Color del texto de la cabecera y del sidebar"
 
-#: author-bio.php:12
-msgid "Published by"
-msgstr "Publicado por"
+#: inc/customizer.php:47 inc/customizer.php:63 inc/customizer.php:68
+msgid "Applied to the header on small screens and the sidebar on wide screens."
+msgstr "Aplicado a la cabecera en pantallas pequeñas y al sidebar en pantallas anchas."
 
-#: author-bio.php:34
-msgid "View all posts by %s"
-msgstr "Ver todas las entradas de %s"
+#: inc/customizer.php:62
+msgid "Header and Sidebar Background Color"
+msgstr "Color de fondo de la cabecera y del sidebar"
+
+#: inc/customizer.php:92
+msgid "Default"
+msgstr "Por defecto"
+
+#: inc/customizer.php:103
+msgid "Dark"
+msgstr "Oscuro"
+
+#: inc/customizer.php:114
+msgid "Yellow"
+msgstr "Amarillo"
+
+#: inc/customizer.php:125
+msgid "Pink"
+msgstr "Rosado"
+
+#: inc/customizer.php:136
+msgid "Purple"
+msgstr "Púrpura"
+
+#: inc/customizer.php:147
+msgid "Blue"
+msgstr "Azul"
+
+#: inc/template-tags.php:26
+msgid "Older Comments"
+msgstr "Comentarios anteriores"
+
+#: inc/template-tags.php:30
+msgid "Newer Comments"
+msgstr "Comentarios recientes"
+
+#: inc/template-tags.php:49
+msgid "Featured"
+msgstr "Destacado"
+
+#: inc/template-tags.php:55
+msgctxt "Used before post format."
+msgid "Format"
+msgstr "Formato"
+
+#: inc/template-tags.php:76
+msgctxt "Used before publish date."
+msgid "Posted on"
+msgstr "Publicado el"
+
+#: inc/template-tags.php:85
+msgctxt "Used before post author name."
+msgid "Author"
+msgstr "Autor"
+
+#: inc/template-tags.php:94
+msgctxt "Used before category names."
+msgid "Categories"
+msgstr "Categorías"
+
+#: inc/template-tags.php:102
+msgctxt "Used before tag names."
+msgid "Tags"
+msgstr "Etiquetas"
+
+#: inc/template-tags.php:113
+msgctxt "Used before full size attachment link."
+msgid "Full size"
+msgstr "Tamaño completo"
+
+#: single.php:34
+msgid "Next post:"
+msgstr "Entrada siguiente:"
+
+#: single.php:37
+msgid "Previous post:"
+msgstr "Entrada anterior:"
+
+#. Theme Name of the plugin/theme
+msgid "Twenty Fifteen"
+msgstr "Twenty Fifteen"
+
+#. Description of the plugin/theme
+msgid "Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer."
+msgstr "Nuestro tema por defecto de 2015 es limpio, enfocado a los blogs y con un diseño claro. La tipografía de Twenty Finten es sencilla, clara y legible en una gran variedad de tamaños de pantalla, además está disponible en muchos idiomas. Lo hemos diseñado pensando primero en su uso en dispositivos móviles, lo que implica que su contenido ocupará el centro de la escena independientemente de cómo lleguen sus visitantes, ya sea desde un móvil inteligente, una tableta, un portátil o un ordenador de escritorio."
