@@ -945,3 +945,11 @@ canvas {
 .calendario_tabla > td{
   vertical-align: top;
 }
+
+.desc-cat>p{
+  text-align: center;
+  color: white;
+  margin-top: 25%;
+  font-size: 3.5em;
+  text-shadow: 2px 2px 2px #000;
+}

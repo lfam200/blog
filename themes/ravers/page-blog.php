@@ -54,54 +54,26 @@ Template Name: Página Blog
           ?>
           </ul>
         </div>
-        <div class="cat col-xs-4 texto-blanco text-center">DJ BIRTHDAY CALENDAR</div>
-        <div class="title_border col-xs-12"></div>
-        <div class="col-xs-12 margin-top">
-          <?php rewind_posts(); ?>
-          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            <?php the_content(); ?>
-            <!-- post -->
-          <?php endwhile; ?>
-            <!-- post navigation -->
-          <?php else: ?>
-            <h3 class="Notice-title">No se encontraron Calendarios...</h3>
-            <!-- no posts found -->
-          <?php endif; ?>
-        </div>
-
+        
       </div>
 
       <div class="col-xs-4">
         <div class="col-xs-12">
           <div class="margin-top embed-responsive embed-responsive-16by9">
-            <iframe class="center-block shadow embed-responsive-item" width="80%" src="https://www.youtube.com/embed/qOLZTZpjXQo" frameborder="0" allowfullscreen></iframe>
+            <iframe class="center-block shadow embed-responsive-item" width="70%" src="https://www.youtube.com/embed/qOLZTZpjXQo" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
         <div class="col-xs-12">
           <div class="margin-top embed-responsive embed-responsive-16by9">
-            <iframe class="center-block shadow embed-responsive-item" width="80%" src="https://www.youtube.com/embed/7x0Y9eIwurw" frameborder="0" allowfullscreen></iframe>
+            <iframe class="center-block shadow embed-responsive-item" width="70%" src="https://www.youtube.com/embed/7x0Y9eIwurw" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
         <div class="col-xs-12">
           <div class="margin-top embed-responsive embed-responsive-16by9">
-            <iframe class="center-block shadow embed-responsive-item" width="80%" src="https://www.youtube.com/embed/7x0Y9eIwurw" frameborder="0" allowfullscreen></iframe>
+            <iframe class="center-block shadow embed-responsive-item" width="70%" src="https://www.youtube.com/embed/7x0Y9eIwurw" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
-        <div class="col-xs-12">
-          <div class="margin-top embed-responsive embed-responsive-16by9">
-            <iframe class="center-block shadow embed-responsive-item" width="80%" src="https://www.youtube.com/embed/7x0Y9eIwurw" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="col-xs-12">
-          <div class="margin-top embed-responsive embed-responsive-16by9">
-            <iframe class="center-block shadow embed-responsive-item" width="80%" src="https://www.youtube.com/embed/7x0Y9eIwurw" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="col-xs-12">
-          <div class="margin-top embed-responsive embed-responsive-16by9">
-            <iframe class="center-block shadow embed-responsive-item" width="80%" src="https://www.youtube.com/embed/7x0Y9eIwurw" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
+        
       </div>
     </div>
 

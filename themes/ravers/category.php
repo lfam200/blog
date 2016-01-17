@@ -1,8 +1,21 @@
 <?php get_header(); ?>
+ <?php 
+        
+        $id_cat = get_query_var('cat');
+        function get_cat_slug($cat_id) {
+          $cat_id = (int) $cat_id;
+          $category = &get_category($cat_id);
+          return $category->slug;
+        };
+        $slug = get_cat_slug($id_cat);
+        $cat_name = single_cat_title("",false); 
+
+?>
 <div class="bg_blog">
   <div class="container ">
-    <div class="col-xs-12 ">
-        <p class="text-center text-blog">international ravers charity : BLOG</p>
+    <div class="col-xs-12 desc-cat">
+
+        <?php echo category_description();?>
     </div>
   </div>
 </div>
@@ -10,12 +23,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 margin-bottom">
-        <div class="col-xs-4">
-           <h3 class="texto-blanco">#HashTagHashTag</h3>
-        </div>
-        <div class="col-xs-4 col-xs-offset-4">
-           <h3 class="texto-blanco"><a href="" class="a_nolink">Categories</a></h3>
-        </div>
+        <h3 class="texto-blanco text-right"><a href="http://localhost:8888/iravers/blog/" class="a_nolink">Categories</a></h3>
       </div>
     </div>
   </div>
@@ -23,283 +31,47 @@
 <div class="white">
   <div class="container">
     <div class="row rowsombra">
-      <h1 class="text-center margin-bottom margin-top">
+      
       <?php 
-        echo single_cat_title("",false); 
+        if(is_category('water-sanitation-programs')){
       ?>
-      </h1>
-      <div class="col-xs-12">
+        <div class="col-xs-12">
+          <div class="cat col-xs-4 texto-blanco text-left">Water accesibility program</div>
+          <div class="col-xs-4"></div>
+          <div class="cat col-xs-4 col-xs-offset-2 texto-blanco text-right">Sanitation & hygiene project</div>
+          <div class="title_border col-xs-12"></div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 margin-top">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="center-block shadow embed-responsive-item" width="80%" src="https://www.youtube.com/embed/qOLZTZpjXQo" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <div class="col-xs-12 text-center margin-top-lg ">
+                  <a href="<?php bloginfo('home'); ?>/donate">
+                      <button type="button" class="btn btn-success btn-lg btn-custom">Ver mas</button>
+                  </a>
+              </div>
+          </div>
+          <div class="col-xs-2"></div> 
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 margin-top">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="center-block shadow embed-responsive-item" width="80%" src="https://www.youtube.com/embed/7x0Y9eIwurw" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <div class="col-xs-12 text-center margin-top-lg ">
+                  <a href="<?php bloginfo('home'); ?>/donate"><button type="button" class="btn btn-success btn-lg btn-custom">Ver mas</button></a>
+              </div>
+          </div>
+        </div> 
+
       <?php
-        $idObj = get_query_var('cat');
-
-        if($idObj>=23 && $idObj<=34){
-          $args = array(
-                      'type'                     => 'post',
-                      'child_of'                 => $idObj,
-                      'parent'                   => '',
-                      'orderby'                  => 'id',
-                      'order'                    => 'ASC',
-                      'hide_empty'               => 0,
-                      'hierarchical'             => 1,
-                      'exclude'                  => '',
-                      'include'                  => '',
-                      'number'                   => '',
-                      'taxonomy'                 => 'category',
-                      'pad_counts'               => false 
-
-                     ); 
-          $categories = get_categories($args);
-        ?>
-        <div class="col-xs-8 col-xs-offset-2">
-          <table width="100%" border="1" id="calendario_tabla"> 
-            
-              <tr>
-                <th class="cal_1 text-center cal-dj-head text-large">Sun</th>
-                <th class="cal_2 text-center cal-dj-head text-large">Mon</th>
-                <th class="cal_3 text-center cal-dj-head text-large">Tue</th>
-                <th class="cal_4 text-center cal-dj-head text-large">Wed</th>
-                <th class="cal_5 text-center cal-dj-head text-large">Thu</th>
-                <th class="cal_6 text-center cal-dj-head text-large">Fri</th>
-                <th class="cal_7 text-center cal-dj-head text-large">Sat</th>
-              </tr>
-            
-        <?php 
-          echo "<tr>"; 
-          date_default_timezone_set('UTC');
-          $f = $idObj - 22;
-          $d = date("D", mktime(0, 0, 0, $f, 1, 2015));
-          if($d == 'Sun'){
-            $v = 1;  
-          }
-          if($d == 'Mon'){
-            echo "<td class='cal_1 text-right cal-dj'></td>";
-            $v = 2;  
-          }
-          if($d == 'Tue'){
-            echo "<td class='cal_1 text-right cal-dj'></td><td class='cal_2 text-right cal-dj'></td>";
-            $v = 3;  
-          }
-          if($d == 'Wed'){
-            echo "<td class='cal_1 text-right cal-dj'></td><td class='cal_2 text-right cal-dj'></td><td class='cal_3 text-right cal-dj'></td>";
-            $v = 4;  
-          }
-          if($d == 'Thu'){
-            echo "<td class='cal_1 text-right cal-dj'></td><td class='cal_2 text-right cal-dj'></td><td class='cal_3 text-right cal-dj'></td><td class='cal_4 text-right cal-dj'></td>";
-            $v = 5;  
-          }
-          if($d == 'Fri'){
-            echo "<td class='cal_1 text-right cal-dj'></td><td class='cal_2 text-right cal-dj'></td><td class='cal_3 text-right cal-dj'></td><td class='cal_4 text-right cal-dj'></td><td class='cal_5 text-right cal-dj'></td>";
-            $v = 6;  
-          }
-          if($d == 'Sat'){
-            echo "<td class='cal_1 text-right cal-dj'></td><td class='cal_2 text-right cal-dj'></td><td class='cal_3 text-right cal-dj'></td><td class='cal_4 text-right cal-dj'></td><td class='cal_5 text-right cal-dj'></td><td class='cal_6 text-right cal-dj'></td>";
-            $v = 7;  
-          }
-
-
-          
-
-          foreach ($categories as $clave => $category) : 
-              
-              $cat = $category->name;
-              
-              $rest = substr($cat, 0, 3);
-              $mod = ($clave+$v) % 7;
-              $id = $clave+$v;
-              if($id > 7){
-                $id = $id % 7;
-                if($id == 0){
-                  $id = 7;
-                }
-              }
-              if($mod == 0){
-                echo "<td class ='cal_".$id." text-right cal-dj'><a href=".$rest.">".$rest."</a></td></tr><tr>";
-
-              }else{
-                echo "<td class ='cal_".$id." text-right cal-dj'><a href=".$rest.">".$rest."</a></td>";
-              }
-              
-              
-          endforeach;
-        ?>
-          </tr>
-        </table>
-        
-        </div>
-        <?php
         }
 
-        else{
-          <div class="title_border col-xs-12">
-          <!-- Start the Loop. -->
-          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-            <!-- Test if the current post is in category 3. -->
-            <!-- If it is, the div box is given the CSS class "post-cat-three". -->
-            <!-- Otherwise, the div box is given the CSS class "post". -->
-
-            <?php if ( in_category( '3' ) ) : ?>
-              <div class="post-cat-three">
-            <?php else : ?>
-              <div class="post">
-            <?php endif; ?>
-
-
-            <!-- Display the Title as a link to the Post's permalink. -->
-
-            <h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-
-
-            <!-- Display the date (November 16th, 2009 format) and a link to other posts by this posts author. -->
-
-            <small><?php the_time('F jS, Y'); ?> by <?php the_author_posts_link(); ?></small>
-
-
-            <!-- Display the Post's content in a div box. -->
-
-            <div class="entry">
-              <?php the_content(); ?>
-            </div>
-
-
-            <!-- Display a comma separated list of the Post's Categories. -->
-
-            <p class="postmetadata"><?php _e( 'Posted in' ); ?> <?php the_category( ', ' ); ?></p>
-            </div> <!-- closes the first div box -->
-
-
-            <!-- Stop The Loop (but note the "else:" - see next line). -->
-
-          <?php endwhile; else : ?>
-
-
-            <!-- The very first "if" tested to see if there were any Posts to -->
-            <!-- display.  This "else" part tells what do if there weren't any. -->
-            <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-
-
-            <!-- REALLY stop The Loop. -->
-          <?php endif; ?>
-        </div>
-        }
       ?>
-      </div>
-      <div class="col-xs-11">
-        <p class="text-right text-large">Suscribe to our <strong>DJ Birthday Calendar</strong></p>
-      </div>
+      
       <div class="col-xs-12">
-        <div class="cat col-xs-4  text-left"><p class="texto-blanco text-large">Birthday's wishes</p></div>
+      
       </div>
-      <div class="col-xs-8">
-        <div class="title_border col-xs-12">
-          <!-- Start the Loop. -->
-          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-            <!-- Test if the current post is in category 3. -->
-            <!-- If it is, the div box is given the CSS class "post-cat-three". -->
-            <!-- Otherwise, the div box is given the CSS class "post". -->
-
-            <?php if ( in_category( '3' ) ) : ?>
-              <div class="post-cat-three">
-            <?php else : ?>
-              <div class="post">
-            <?php endif; ?>
-
-
-            <!-- Display the Title as a link to the Post's permalink. -->
-
-            <h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-
-
-            <!-- Display the date (November 16th, 2009 format) and a link to other posts by this posts author. -->
-
-            <small><?php the_time('F jS, Y'); ?> by <?php the_author_posts_link(); ?></small>
-
-
-            <!-- Display the Post's content in a div box. -->
-
-            <div class="entry">
-              <?php the_content(); ?>
-            </div>
-
-
-            <!-- Display a comma separated list of the Post's Categories. -->
-
-            <p class="postmetadata"><?php _e( 'Posted in' ); ?> <?php the_category( ', ' ); ?></p>
-            </div> <!-- closes the first div box -->
-
-
-            <!-- Stop The Loop (but note the "else:" - see next line). -->
-
-          <?php endwhile; else : ?>
-
-
-            <!-- The very first "if" tested to see if there were any Posts to -->
-            <!-- display.  This "else" part tells what do if there weren't any. -->
-            <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-
-
-            <!-- REALLY stop The Loop. -->
-          <?php endif; ?>
-        </div>
-        
-      </div> 
-      <div class="col-xs-12 dot_border margin-bottom-lg">
-        <h2 class="text-center margin-bottom">Suscribe DJs</h2>
-        <figure>
-          <img src="<?php bloginfo('template_directory'); ?>/img/ir-col.png" alt="International Ravers" class="center-block img-responsive margin-top-lg margin-bottom-lg" width="50%">
-        </figure>
-        <div class="col-xs-12 margin-bottom-lg">
-          <div class="col-xs-9">
-            <p class="text-large"># of suscribes:</p>
-          </div> 
-          <div class="col-xs-3 text-right">
-            <button class="btn btn-success text-large">Go to our DJs</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12">
-        <div class="col-xs-12 margin-bottom-lg">
-          <div class="col-xs-4 content-blue">
-            <p class="text-center margin-top texto-blanco text-large">invite you<br> DJ</p>
-            <p class="text-center margin-top margin-bottom-lg ">
-              <a href="https://www.facebook.com/internationalravers" class="icon-green"><i class="fa fa-facebook-official fa-4x"></i></a>
-              <a href="https://www.facebook.com/internationalravers" class="icon-green"><i class="fa fa-twitter-square fa-4x"></i></a>
-            </p>  
-          </div>
-          <div class="col-xs-4">
-            <p class="text-center margin-top texto-blanco text-large">or</p>
-          </div>
-          <div class="col-xs-4 content-blue">
-            <p class="text-center margin-top texto-blanco text-large">suscribe to our  <br>DJ calendar</p>
-            <p class="text-center margin-top margin-bottom-lg">
-              <button class="btn btn-success text-large">send us an a mail</button>
-            </p>
-          </div>
-        </div>
-      </div> 
     </div>
   </div>
 </div>
 <?php get_footer(); ?>
-
-<script type="text/javascript">
-    $(document).ready(function(){
-
-      var color = '#'; // hexadecimal starting symbol
-      var letters = ['0075FF','FFBD00','1BC659','FD0054']; //Set your colors here
-      
-      
-      $('.month-dj').each(function(){
-        color += letters[Math.floor(Math.random() * letters.length)];
-        // alert(color)
-
-        $(this).css('background',color);
-        color = '#'
-      })
-      
-    })
-        
-</script>
 </body>
 </html>
