@@ -23,7 +23,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 margin-bottom">
-        <h3 class="texto-blanco text-right"><a href="http://localhost:8888/iravers/blog/" class="a_nolink">Categories</a></h3>
+        <h3 class="texto-blanco text-right"><a href="<?php bloginfo('home');?>/blog" class="a_nolink">Categories</a></h3>
       </div>
     </div>
   </div>
@@ -149,12 +149,16 @@
 
       <?php
         }
-
+        else{
       ?>
       
       <div class="col-xs-12">
-      
+        <h1>PAGINA EN CONSTRUCCION</h1>
       </div>
+
+      <?php 
+        }
+      ?>
     </div>
   </div>
 </div>
