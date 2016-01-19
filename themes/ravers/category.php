@@ -30,7 +30,7 @@
 </div>
 <div class="white">
   <div class="container">
-    <div class="row rowsombra">
+    <div class="row rowsombra-total">
       
       <?php 
         if(is_category('water-sanitation-programs')){
