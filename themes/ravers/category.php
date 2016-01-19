@@ -94,13 +94,39 @@
               <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <?php if ( in_category( $category->slug ) ) : ?>
                   <div class="post">
-                    <h2>
-                      <a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-                    </h2>
+                    
                     <div class="entry">
-                      <?php the_excerpt(); ?>
+                      <div class="col-xs-12 padding-top-lg">
+                        <div class="col-xs-3 padding-top-lg">
+                          <?php the_post_thumbnail('my-size'); ?>
+                        </div>
+                        <div class="col-xs-6">
+                          
+                          <div class="col-xs-12">
+                            <h4 class="text-left ">
+                              <?php the_title(); ?>
+                            </h4> 
+                            <?php 
+                              the_excerpt(); 
+                            ?>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="col-xs-4">
+                              <a href="<?php the_permalink(); ?>">
+                                  <button type="button" class="btn btn-success">Read More</button>
+                              </a>
+                            </div>
+                            <div class="col-xs-8">
+                              <small><?php the_time('F jS, Y'); ?> by <?php the_author_posts_link(); ?></small>
+                              
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </div>
+                     
                     </div>
-                    <p class="postmetadata"><?php _e( 'Posted in' ); ?> <?php the_category( ', ' ); ?></p>
+                    
                 </div>
                 <?php else : ?>
                   <div class="post">

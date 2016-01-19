@@ -40,3 +40,18 @@ function miplugin_register_sidebar(){
 }
 
 add_action('widgets_init','miplugin_register_sidebar');
+
+
+add_filter( "the_excerpt", "add_class_to_excerpt" );
+function add_class_to_excerpt( $excerpt ) {
+    return str_replace('<p', '<p class="text-justify"', $excerpt);
+}
+
+function custom_excerpt_length( $length ) {
+  return 45;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+function new_excerpt_more( $more ) {
+  return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
