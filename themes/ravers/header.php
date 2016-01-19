@@ -10,11 +10,12 @@
       if ( is_home()) { 
         echo 'Home'; 
       }else{ 
-        if(the_title()){
-          the_title();
+        $cat_name = single_cat_title("",false);
+        if($cat_name){
+          echo $cat_name;
         }
         else{
-          echo single_cat_title("",false);
+          the_title();
         }
       } 
     ?> | International Ravers Charity.

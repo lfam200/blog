@@ -94,14 +94,12 @@
               <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <?php if ( in_category( $category->slug ) ) : ?>
                   <div class="post">
-                    
                     <div class="entry">
                       <div class="col-xs-12 padding-top-lg">
                         <div class="col-xs-3 padding-top-lg">
                           <?php the_post_thumbnail('my-size'); ?>
                         </div>
                         <div class="col-xs-6">
-                          
                           <div class="col-xs-12">
                             <h4 class="text-left ">
                               <?php the_title(); ?>
@@ -140,7 +138,10 @@
                <?php endif; ?>
             </div>
           <?php  endforeach; ?>
-          </div> 
+            <div class="cat col-xs-4 texto-blanco text-left">OUR COMPLETED PROJECTS</div>
+            <div class="title_border col-xs-12"></div>
+          </div>
+
         </div> 
 
       <?php
