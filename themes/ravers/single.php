@@ -5,18 +5,21 @@
     <div class="row padding-top-lg padding-bottom">
       <div class="col-xs-12 rowsombra">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-          <div id="entrada">
-            <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-            <p class="postmetadata">
-                Por <?php the_author(', '); ?> el <?php the_time('F jS, Y'); ?> en <?php the_category(', ') ?> | <?php comments_popup_link('No Comments »', '1 Comment »', '% Comments »'); ?>
+          <div class="col-xs-10 col-xs-offset-1">
+            <h2 class="text-center"><?php the_title(); ?></h2>
+            <p class="text-center">
+              <small>
+                              Blog Home | <?php the_time('m.s.Y'); ?> By <?php the_author(', '); ?> | Updates
+                          </small>
             </p>
-            <div class="imagen-post-thumbnail">
-              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+            <div class="col-xs-8 col-xs-offset-2">
+              <?php the_post_thumbnail(); ?>
             </div>
-            <div class="entry-single">
+            <div class="col-xs-10 col-xs-offset-1 margin-top-lg margin-bottom-lg">
               <?php the_content(); ?>
+              By <?php the_author(', '); ?>
             </div>
- 
+            
           </div>
                 
             <?php endwhile; ?>
