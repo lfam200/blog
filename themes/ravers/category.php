@@ -140,7 +140,7 @@
           <?php  endforeach; ?>
             <div class="cat col-xs-4 texto-blanco text-left">OUR COMPLETED PROJECTS</div>
             <div class="title_border col-xs-12"></div>
-            <div class="col-xs-12">
+            <div class="col-xs-12 margin-top margin-bottom-lg">
               <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Sidebar Stripe')) : ?>
               <?php endif; ?>
             </div>
