@@ -117,7 +117,7 @@
                               </a>
                             </div>
                             <div class="col-xs-8">
-                              <small><?php the_time('F jS, Y'); ?> by <?php the_author_posts_link(); ?></small>
+                              <small><?php the_time('m.j.Y'); ?> by <?php the_author_posts_link(); ?></small>
                               
                             </div>
                             
