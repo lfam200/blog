@@ -116,9 +116,7 @@
                             </div>
                             <div class="col-xs-8">
                               <small><?php the_time('m.j.Y'); ?> by <?php the_author_posts_link(); ?></small>
-                              
                             </div>
-                            
                           </div>
                         </div>
                       </div>
@@ -141,7 +139,7 @@
             <div class="cat col-xs-4 texto-blanco text-left">OUR COMPLETED PROJECTS</div>
             <div class="title_border col-xs-12"></div>
             <div class="col-xs-12 margin-top margin-bottom-lg">
-              <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Sidebar Stripe')) : ?>
+              <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Sidebar Map')) : ?>
               <?php endif; ?>
             </div>
           </div>

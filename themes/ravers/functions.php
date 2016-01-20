@@ -36,6 +36,16 @@ function miplugin_register_sidebar(){
             )
     );
 
+    register_sidebar(
+        array(
+            'id'    => 'sidebar-map',
+            'name'  => 'Sidebar Map',
+            'description' => 'Sidebar Map',
+            'before_widget' => '<div class="">',
+            'after_widget'  => '</div>'
+            )
+    );
+
   
 }
 
