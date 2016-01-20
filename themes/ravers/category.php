@@ -7,6 +7,7 @@
           $category = &get_category($cat_id);
           return $category->slug;
         };
+
         $slug = get_cat_slug($id_cat);
         $cat_name = single_cat_title("",false); 
 
@@ -14,16 +15,18 @@
 <div class="bg_blog">
   <div class="container ">
     <div class="col-xs-12 desc-cat">
-
-        <?php echo category_description();?>
+      <?php echo category_description();?>
     </div>
   </div>
 </div>
+
 <div class="blue">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 margin-bottom">
-        <h3 class="texto-blanco text-right"><a href="<?php bloginfo('home');?>/blog" class="a_nolink">Categories</a></h3>
+        <h3 class="texto-blanco text-right">
+          <a href="<?php bloginfo('home');?>/blog" class="a_nolink">Categories</a>
+        </h3>
       </div>
     </div>
   </div>
@@ -87,7 +90,9 @@
               $name = $category->name;
           ?>
 
-            <div class="cat col-xs-4 texto-blanco text-left"><?php echo $name;?></div>
+            <div class="cat col-xs-4 texto-blanco text-left">
+              <a class="a_nolink" href="<?php bloginfo('home') ?>/category/<?php echo get_cat_slug($id_cat); ?>/<?php echo $category->slug ?>"><?php echo $name;?></a>
+            </div>
             <div class="title_border col-xs-12"></div>
             <div class="col-xs-12">
               <!-- Start the Loop. -->
@@ -152,8 +157,46 @@
       ?>
       
       <div class="col-xs-12">
-        <h1>PAGINA EN CONSTRUCCION</h1>
-      </div>
+              <!-- Start the Loop. -->
+              <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                  <div class="post">
+                    <div class="entry">
+                      <div class="col-xs-12 padding-top-lg">
+                        <div class="col-xs-3 padding-top-lg">
+                          <?php the_post_thumbnail('my-size'); ?>
+                        </div>
+                        <div class="col-xs-6">
+                          <div class="col-xs-12">
+                            <h4 class="text-left ">
+                              <?php the_title(); ?>
+                            </h4> 
+                            <?php 
+                              the_excerpt(); 
+                            ?>
+                          </div>
+                          <div class="col-xs-12">
+                            <div class="col-xs-4">
+                              <a href="<?php the_permalink(); ?>">
+                                  <button type="button" class="btn btn-success">Read More</button>
+                              </a>
+                            </div>
+                            <div class="col-xs-8">
+                              <small><?php the_time('m.j.Y'); ?> by <?php the_author_posts_link(); ?></small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                     
+                    </div>
+                    
+                </div>
+                <?php endwhile; else : ?>
+                <!-- The very first "if" tested to see if there were any Posts to -->
+                <!-- display.  This "else" part tells what do if there weren't any. -->
+                <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+                <!-- REALLY stop The Loop. -->
+               <?php endif; ?>
+            </div>
 
       <?php 
         }
