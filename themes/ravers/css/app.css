@@ -956,3 +956,21 @@ canvas {
   font-size: 3.5em;
   text-shadow: 2px 2px 2px #000;
 }
+
+.prev-next{
+  background:#EAEAEA;
+  border: solid 1px #000;
+  height: 6em;
+}
+
+.nav-previous{
+  display: block;
+  border-right: solid 1px #000;
+  height: 6em;
+  line-height: 6em;
+}
+.nav-next{
+  display: block;
+  height: 6em;
+  line-height: 6em;
+}
