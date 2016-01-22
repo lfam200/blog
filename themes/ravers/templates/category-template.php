@@ -10,7 +10,7 @@
                         <div class="col-xs-6">
                           <div class="col-xs-12">
                             <h4 class="text-left ">
-                              <?php the_title(); ?>
+                              <?php the_title(); ?>a
                             </h4> 
                             <?php 
                               the_excerpt(); 
