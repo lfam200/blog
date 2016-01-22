@@ -186,19 +186,12 @@
 
                            ); 
               $categories = get_categories($args); 
-               // echo $idObj;
-              // print_r($categories);  // para ver toda la informacion contenida en el array $categories
-               
-              // Por ejemplo, imprimimos el nombre de las subcategorias
               foreach ($categories as $category) : 
-                  
                   $cat = $category->name;
                   echo "<div class='col-xs-3'><div class='center-block month-dj'><p class='text-center text-vertical texto-blanco'><a class='a_nolink' href='".$cat."'>";
-                  
                   $rest = substr($cat, 0, 3);
                   echo $rest;
                   echo "</a></p></div></div>";
-
               endforeach;
               ?>
             </div>
