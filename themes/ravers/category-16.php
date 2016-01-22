@@ -162,23 +162,6 @@
 </div>
 <?php get_footer(); ?>
 
-<script type="text/javascript">
-    $(document).ready(function(){
 
-      var color = '#'; // hexadecimal starting symbol
-      var letters = ['0075FF','FFBD00','1BC659','FD0054']; //Set your colors here
-      
-      
-      $('.month-dj').each(function(){
-        color += letters[Math.floor(Math.random() * letters.length)];
-        // alert(color)
-
-        $(this).css('background',color);
-        color = '#'
-      })
-      
-    })
-        
-</script>
 </body>
 </html>
