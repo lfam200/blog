@@ -868,6 +868,9 @@ canvas {
 }
 .a_nolink{
   color: #fff;
+  text-shadow: 1px 2px #000;
+  margin-right: .5em;
+  font-size: 1.3em
 }
 .a_nolink:hover{
   color: #fff;

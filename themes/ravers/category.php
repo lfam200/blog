@@ -188,74 +188,20 @@
               $categories = get_categories($args); 
               foreach ($categories as $category) : 
                   $cat = $category->name;
-                  echo "<div class='col-xs-3'><div class='center-block month-dj'><p class='text-center text-vertical texto-blanco'><a class='a_nolink' href='".$cat."'>";
-                  $rest = substr($cat, 0, 3);
-                  echo $rest;
-                  echo "</a></p></div></div>";
+                  $len = strlen($cat);
+                  if($len > 2){
+                    echo "<div class='col-xs-3'><div class='center-block month-dj'><p class='text-center text-vertical texto-blanco'><a class='a_nolink' href='".$cat."'>";
+                    $rest = substr($cat, 0, 3);
+                    echo $rest;
+                    echo "</a></p></div></div>";
+                  }
+                  
               endforeach;
               ?>
             </div>
-            <div class="col-xs-11">
+            <div class="col-xs-11 margin-bottom-lg">
               <p class="text-right text-large">Suscribe to our <strong>DJ Birthday Calendar</strong></p>
             </div>
-            <div class="col-xs-12">
-              <div class="cat col-xs-4  text-left"><p class="texto-blanco text-large">Birthday's wishes</p></div>
-            </div>
-            <div class="col-xs-8">
-              <div class="title_border col-xs-12">
-                <!-- Start the Loop. -->
-                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-                  <!-- Test if the current post is in category 3. -->
-                  <!-- If it is, the div box is given the CSS class "post-cat-three". -->
-                  <!-- Otherwise, the div box is given the CSS class "post". -->
-
-                  <?php if ( in_category( '18' ) ) : ?>
-                    <div class="post-cat-three">
-                  <?php else : ?>
-                    <div class="post">
-                  <?php endif; ?>
-
-
-                  <!-- Display the Title as a link to the Post's permalink. -->
-
-                  <h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-
-
-                  <!-- Display the date (November 16th, 2009 format) and a link to other posts by this posts author. -->
-
-                  <small><?php the_time('F jS, Y'); ?> by <?php the_author_posts_link(); ?></small>
-
-
-                  <!-- Display the Post's content in a div box. -->
-
-                  <div class="entry">
-                    <?php the_content(); ?>
-                  </div>
-
-
-                  <!-- Display a comma separated list of the Post's Categories. -->
-
-                  <p class="postmetadata"><?php _e( 'Posted in' ); ?> <?php the_category( ', ' ); ?></p>
-                  </div> <!-- closes the first div box -->
-
-
-                  <!-- Stop The Loop (but note the "else:" - see next line). -->
-
-                <?php endwhile; else : ?>
-
-
-                  <!-- The very first "if" tested to see if there were any Posts to -->
-                  <!-- display.  This "else" part tells what do if there weren't any. -->
-                  <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-
-
-                  <!-- REALLY stop The Loop. -->
-                <?php endif; ?>
-              </div>
-              
-            </div> 
-             
           </div>
         </div>
       </div>
@@ -263,7 +209,123 @@
       <?php      
           }
           else{
-            include TEMPLATEPATH . "/templates/category-template.php";
+            if(is_category('January') || is_category('February') || is_category('March') || is_category('April') || is_category('May') || is_category('June') || is_category('July') || is_category('August') || is_category('September') || is_category('October') || is_category('November') || is_category('December')){
+                
+                $idObj = get_query_var('cat');
+
+                $args = array(
+                            'type'                     => 'post',
+                            'child_of'                 => $idObj,
+                            'parent'                   => '',
+                            'orderby'                  => 'id',
+                            'order'                    => 'ASC',
+                            'hide_empty'               => 0,
+                            'hierarchical'             => 1,
+                            'exclude'                  => '',
+                            'include'                  => '',
+                            'number'                   => '',
+                            'taxonomy'                 => 'category',
+                            'pad_counts'               => false 
+
+                           ); 
+                $categories = get_categories($args);
+              ?>
+              <div class="col-xs-8 col-xs-offset-2">
+                <h1 class="text-center"><?php echo single_cat_title("",false); ?></h1>
+                <table width="100%" border="1" id="calendario_tabla" class="margin-bottom-lg"> 
+                  
+                    <tr>
+                      <th class="cal_1 text-center cal-dj-head text-large a_nolink">Sun</th>
+                      <th class="cal_2 text-center cal-dj-head text-large a_nolink">Mon</th>
+                      <th class="cal_3 text-center cal-dj-head text-large a_nolink">Tue</th>
+                      <th class="cal_4 text-center cal-dj-head text-large a_nolink">Wed</th>
+                      <th class="cal_5 text-center cal-dj-head text-large a_nolink">Thu</th>
+                      <th class="cal_6 text-center cal-dj-head text-large a_nolink">Fri</th>
+                      <th class="cal_7 text-center cal-dj-head text-large a_nolink">Sat</th>
+                    </tr>
+                  
+              <?php 
+                echo "<tr>"; 
+                date_default_timezone_set('UTC');
+                $mes = single_cat_title("",false);
+                $f = 0;
+                if($mes == 'January'){ $f = 1;}
+                if($mes == 'February'){ $f = 2;}
+                if($mes == 'March'){ $f = 3;}
+                if($mes == 'April'){ $f = 4;}
+                if($mes == 'May'){ $f = 5;}
+                if($mes == 'June'){ $f = 6;}
+                if($mes == 'July'){ $f = 7;}
+                if($mes == 'August'){ $f = 8;}
+                if($mes == 'September'){ $f = 9;}
+                if($mes == 'October'){ $f = 10;}
+                if($mes == 'November'){ $f = 11;}
+                if($mes == 'December'){ $f = 12;}
+                $a = date('Y');
+                $d = date("D", mktime(0, 0, 0, $f, 1, $a));
+                if($d == 'Sun'){
+                  $v = 1;  
+                }
+                if($d == 'Mon'){
+                  echo "<td class='cal_1 text-right cal-dj'></td>";
+                  $v = 2;  
+                }
+                if($d == 'Tue'){
+                  echo "<td class='cal_1 text-right cal-dj'></td><td class='cal_2 text-right cal-dj'></td>";
+                  $v = 3;  
+                }
+                if($d == 'Wed'){
+                  echo "<td class='cal_1 text-right cal-dj'></td><td class='cal_2 text-right cal-dj'></td><td class='cal_3 text-right cal-dj'></td>";
+                  $v = 4;  
+                }
+                if($d == 'Thu'){
+                  echo "<td class='cal_1 text-right cal-dj'></td><td class='cal_2 text-right cal-dj'></td><td class='cal_3 text-right cal-dj'></td><td class='cal_4 text-right cal-dj'></td>";
+                  $v = 5;  
+                }
+                if($d == 'Fri'){
+                  echo "<td class='cal_1 text-right cal-dj'></td><td class='cal_2 text-right cal-dj'></td><td class='cal_3 text-right cal-dj'></td><td class='cal_4 text-right cal-dj'></td><td class='cal_5 text-right cal-dj'></td>";
+                  $v = 6;  
+                }
+                if($d == 'Sat'){
+                  echo "<td class='cal_1 text-right cal-dj'></td><td class='cal_2 text-right cal-dj'></td><td class='cal_3 text-right cal-dj'></td><td class='cal_4 text-right cal-dj'></td><td class='cal_5 text-right cal-dj'></td><td class='cal_6 text-right cal-dj'></td>";
+                  $v = 7;  
+                }
+
+
+                
+
+                foreach ($categories as $clave => $category) : 
+                    
+                    $cat = $category->name;
+                    
+                    $rest = substr($cat, 0, 3);
+                    $mod = ($clave+$v) % 7;
+                    $id = $clave+$v;
+                    if($id > 7){
+                      $id = $id % 7;
+                      if($id == 0){
+                        $id = 7;
+                      }
+                    }
+                    if($mod == 0){
+                      echo "<td class ='cal_".$id." text-right cal-dj'><a class='a_nolink' href=".$rest.">".$rest."</a></td></tr><tr>";
+
+                    }else{
+                      echo "<td class ='cal_".$id." text-right cal-dj'><a class='a_nolink' href=".$rest.">".$rest."</a></td>";
+                    }
+                    
+                    
+                endforeach;
+              ?>
+                </tr>
+              </table>
+              
+              </div>
+              <?php
+            }else{
+              include TEMPLATEPATH . "/templates/category-template.php";
+            }
+            
           }
           
         }
