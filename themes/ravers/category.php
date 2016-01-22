@@ -299,10 +299,10 @@
                       }
                     }
                     if($mod == 0){
-                      echo "<td class ='cal_".$id." text-right cal-dj'><a class='a_nolink' href=".$rest."-".$mes.">".$rest."</a></td></tr><tr>";
+                      echo "<td class ='cal_".$id." text-right cal-dj'><a class='a_nolink' href=".$rest."-".strtolower($mes).">".$rest."</a></td></tr><tr>";
 
                     }else{
-                      echo "<td class ='cal_".$id." text-right cal-dj'><a class='a_nolink' href=".$rest."-".$mes.">".$rest."</a></td>";
+                      echo "<td class ='cal_".$id." text-right cal-dj'><a class='a_nolink' href=".$rest."-".strtolower($mes).">".$rest."</a></td>";
                     }
                     
                     
