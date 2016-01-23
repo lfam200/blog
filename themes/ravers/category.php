@@ -112,7 +112,7 @@
                     <div class="col-xs-12">
                       <div class="col-xs-4">
                         <a href="<?php the_permalink(); ?>">
-                          <button type="button" class="btn btn-success">Read Moaaare</button>
+                          <button type="button" class="btn btn-success">Read More</button>
                         </a>
                       </div>
                       <div class="col-xs-8">
@@ -337,7 +337,7 @@
                           </div>
                           <div class="col-xs-12">
                             <a href="<?php the_permalink(); ?>" >
-                              <button type="button" class="btn btn-success btn-lg center-block">Read More</button>
+                              <button type="button" class="btn btn-success btn-lg center-block">Read Post</button>
                             </a>
                           </div>
                         </div>
@@ -374,7 +374,7 @@
                           <div class="col-xs-12">
                             <div class="col-xs-4">
                               <a href="<?php the_permalink(); ?>">
-                                <button type="button" class="btn btn-success">Read Moaaare</button>
+                                <button type="button" class="btn btn-success">Read More</button>
                               </a>
                             </div>
                             <div class="col-xs-8">

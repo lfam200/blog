@@ -977,3 +977,23 @@ canvas {
   height: 6em;
   line-height: 6em;
 }
+
+.border-dj{
+  border: 1px solid #000;
+  box-shadow: 1px 1px 1px #000;
+}
+
+.margin-top-center{
+  margin-top: 25%;
+}
+
+.margin-center-vert{
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.t-blue{
+  background:#006EFF;
+  width: 50%;
+  margin-bottom: 3px;
+}
