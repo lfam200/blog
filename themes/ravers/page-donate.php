@@ -46,6 +46,7 @@ Template Name: Página Donar
             <input type="number" class="form-control" id="inputTotal" value="1.00" disabled>
           </div>
         </div>
+        <?php echo do_shortcode( '[stripe amount="500"]' ); ?>
         <div class="form-group col-xs-12">
           <p class="text-justify texto-blanco text-shadow">* Our research about the average of water that a raver drinks on a festival day is 3.7 lts of water. For this reason is impossible  donate more than 4 lts daily.</p>
         </div>
@@ -68,8 +69,14 @@ Template Name: Página Donar
             <div class="form-group col-xs-12 margin-top">
               <label class="texto-blanco text-shadow" for="inputAmmountH">You can donate one time or monthly</label>
               <div class="input-group">
-                <div class="input-group-addon">$</div>
-                <input type="number" class="form-control" id="inputAmmountH" value="1.00">
+                <!-- <div class="input-group-addon">$</div>
+
+                <input type="number" class="form-control" id="inputAmmountH" value="1.00"> -->
+
+                
+                <?php echo do_shortcode( '[stripe]
+                [stripe_amount label="Donation Amount:"]
+                [/stripe]' ); ?>
               </div>
             </div>
             <div class="checkbox">
