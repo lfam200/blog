@@ -5,7 +5,7 @@
   $parent = get_cat_name($categoria[0]->category_parent);
   if($parent == 'January' || $parent == 'February' || $parent == 'March' || $parent == 'April' || $parent == 'May' || $parent == 'June' || $parent == 'July' || $parent == 'August' || $parent == 'September' || $parent == 'October' || $parent == 'November' || $parent == 'December'){
 ?>
-<div class="pinki">
+<div class="pinki img-bg-cal">
   <div class="container">
     <div class="row">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -60,15 +60,22 @@
          
             <?php endif; ?>  
     </div>
-  </div>
-  <div class="prev-next">
-    <div class="container">
-      <div class="row">
-        <div class="nav-previous col-xs-6 text-right"><?php previous_post_link('&#8249; %link', '%title', 'Previous post in category', TRUE); ?> </div>
-        <div class="nav-next col-xs-6 text-left"><?php next_post_link('%link &#8250;', '%title', 'Next post in category', TRUE); ?> </div>
-      </div>           
-               
-    </div><!-- end of #nav-single -->
+  </div>  
+</div>
+<div class="bg-calendar">
+  <img src="<?php bloginfo('template_directory'); ?>/img/fc.png" alt="" width="100%">
+</div>
+<div class="prev-next">
+  <div class="container">
+    <div class="row">
+      <div class="nav-previous col-xs-6 text-right">
+        <?php previous_post_link('&#8249; %link', '%title', 'Previous post in category', TRUE); ?>
+      </div>
+      <div class="nav-next col-xs-6 text-left">
+        <?php next_post_link('%link &#8250;', '%title', 'Next post in category', TRUE); ?>
+      </div>
+    </div>           
+  </div><!-- end of #nav-single -->
 </div>
 <?php
   }else{
@@ -119,8 +126,7 @@
     <div class="row">
       <div class="nav-previous col-xs-6 text-right"><?php previous_post_link('&#8249; %link', '%title', 'Previous post in category', TRUE); ?> </div>
       <div class="nav-next col-xs-6 text-left"><?php next_post_link('%link &#8250;', '%title', 'Next post in category', TRUE); ?> </div>
-    </div>           
-             
+    </div>                    
   </div><!-- end of #nav-single -->
 </div>
 <?php } ?>   

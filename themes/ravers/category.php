@@ -328,7 +328,9 @@
                     <div class="entry">
                       <div class="col-xs-4 padding-top-lg">
                         <div class="col-xs-12 padding-top-lg">
-                          <?php the_post_thumbnail('my-size'); ?>
+                          
+                          <?php the_post_thumbnail('my-size', array('class' => 'img img-responsive center-block')); ?>
+                          
                         </div>
                         <div class="col-xs-12">
                           <div class="col-xs-12">
