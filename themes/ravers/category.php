@@ -299,10 +299,25 @@
                       }
                     }
                     if($mod == 0){
-                      echo "<td class ='cal_".$id." text-right cal-dj'><a class='a_nolink' href=".$rest."-".strtolower($mes).">".$rest."</a></td></tr><tr>";
-
+                      echo "<td class ='cal_".$id." text-right cal-dj'><a class='a_nolink' href=".$rest."-".strtolower($mes).">".$rest."</a><br>".$category->term_id; 
+                     
+                    ?>
+                      <?php $the_query = new WP_Query( 'cat=86&showposts=3' ); ?>
+                      <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+                      <?php the_post_thumbnail('destacado_dj', array('class' => 'img img-responsive')); ?>
+                      <?php endwhile;?>
+                      <?php echo "</td></tr><tr>"; ?> 
+                    <?php 
                     }else{
-                      echo "<td class ='cal_".$id." text-right cal-dj'><a class='a_nolink' href=".$rest."-".strtolower($mes).">".$rest."</a></td>";
+                      echo "<td class ='cal_".$id." text-right cal-dj'><a class='a_nolink' href=".$rest."-".strtolower($mes).">".$rest."</a><br>".$category->term_id;
+                    ?>  
+                      <?php $the_query = new WP_Query( 'cat=86&showposts=3' ); ?>
+                      <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+                      <?php the_post_thumbnail('destacado_dj', array('class' => 'img img-responsive')); ?>
+                      <?php endwhile;?>
+                      
+                    <?php
+                      echo "</td>";
                     }
                     
                     

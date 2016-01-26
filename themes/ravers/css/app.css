@@ -357,7 +357,7 @@ body{
 .bg_blog{
   background: url('../img/bg-blog.jpg') center no-repeat;
   background-size: cover;
-  min-height: 55em;
+  min-height: 45em;
 }
 .vertical{
   margin-top: 8em;
