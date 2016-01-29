@@ -302,10 +302,15 @@
                       echo "<td class ='cal_".$id." text-right cal-dj'><a class='a_nolink' href=".$rest."-".strtolower($mes).">".$rest."</a><br>"; 
                      
                     ?>
+                      <div class="col-xs-12">
                       <?php $the_query = new WP_Query( 'cat='.$category->term_id.'&showposts=3' ); ?>
                       <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
-                      <?php the_post_thumbnail('destacado_dj', array('class' => 'img img-responsive img-circle')); ?>
+                       <div class="col-xs-4">
+                         <?php the_post_thumbnail('destacado_dj', array('class' => 'img img-responsive img-circle')); ?>
+                       </div> 
+                      
                       <?php endwhile;?>
+                      </div>
                       <?php echo "</td></tr><tr>"; ?> 
                     <?php 
                     }else{
