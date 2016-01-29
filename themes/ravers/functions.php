@@ -6,6 +6,7 @@ add_image_size('my-size', 200, 180, true);
 add_image_size('profile', 144, 192, true);
 add_image_size('destacado_post', 1500, 850, true);
 add_image_size('destacado_dj', 800, 800, true);
+add_image_size('thumbnail', 200, 200, true);
 
 function register_my_menus(){
 
