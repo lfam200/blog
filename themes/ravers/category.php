@@ -313,7 +313,7 @@
                     ?>  
                       <?php $the_query = new WP_Query( 'cat='.$category->term_id.'&showposts=3' ); ?>
                       <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
-                      <?php the_post_thumbnail('destacado_dj', array('class' => 'img img-responsive')); ?>
+                      <?php the_post_thumbnail('destacado_dj', array('class' => 'img img-responsive img-circle')); ?>
                       <?php endwhile;?>
                       
                     <?php
