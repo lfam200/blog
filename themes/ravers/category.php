@@ -313,9 +313,9 @@
                     }else{
                       echo "<td class ='cal_".$id." text-right cal-dj'><a class='a_nolink' href=".$rest."-".strtolower($mes).">".$rest."</a><br>";
                     ?>  
-                      <?php $the_query = new WP_Query( 'cat='.$category->term_id.'&showposts=3' ); ?>
+                      <?php $the_query = new WP_Query( 'cat='.$category->term_id.'&showposts=1' ); ?>
                       <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
-                      <?php the_post_thumbnail('destacado_dj', array('class' => 'img img-responsive img-circle')); ?>
+                      <?php the_post_thumbnail('destacado_dj', array('class' => 'img img-responsive img-circle center-block', 'width' => '50%')); ?>
                       <?php endwhile;?>
                       
                     <?php
