@@ -42,7 +42,7 @@
            if( !empty($meta) ) {
             $i = 0;
             while ($i < count($meta)) {
-              echo "<br><a href='".$meta[$i]."'>".$meta[$i]."</a><br>";
+              echo " <img src=".$meta[$i].">";
               $i++;
             }
            
@@ -56,7 +56,7 @@
            if( !empty($meta) ) {
             $i = 0;
             while ($i < count($meta)) {
-              echo "<br><a href='".$meta[$i]."'>".$meta[$i]."</a><br>";
+              echo "<img>".$meta[$i]."<br>";
               $i++;
             }
            
