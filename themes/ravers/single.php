@@ -50,6 +50,19 @@
           ?>
           </div>
           <div class="title_border col-xs-12"></div>
+          <div class="col-xs-12 margin-bottom-lg">
+            <?php
+           $meta = get_post_meta( get_the_ID(), 'aside' );
+           if( !empty($meta) ) {
+            $i = 0;
+            while ($i < count($meta)) {
+              echo "<br><a href='".$meta[$i]."'>".$meta[$i]."</a><br>";
+              $i++;
+            }
+           
+           }
+          ?>
+          </div>
         </div>
       </div>
     <?php endwhile; ?>
