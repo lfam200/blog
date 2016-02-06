@@ -50,7 +50,7 @@
           ?>
           </div>
           <div class="title_border col-xs-12"></div>
-          <div class="col-xs-12 margin-bottom-lg">
+          <div class="col-xs-12 margin-bottom-lg margin-top">
             <?php
            $meta = get_post_meta( get_the_ID(), 'aside' );
            if( !empty($meta) ) {
