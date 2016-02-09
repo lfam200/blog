@@ -44,8 +44,9 @@
     $('.group-form').removeClass("sc-form-group")
     $('.group-form>label').addClass("texto-blanco text-shadow")
     $('.group-form>input').addClass("form-control")
-    $('#average_number').before("<div class='input-group'><div class='input-group-addon'>$</div>")
-    $('#average_number').append("</div>")
+    
+    $('#average_number').wrap("<div class='input-group'></div>")
+    $('#average_number').before("<div class='input-group-addon'>$</div> ")
     
   });
 </script>
