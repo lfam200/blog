@@ -38,5 +38,10 @@
 </div>
 
 <?php get_footer(); ?>
+<script>
+  $(document).ready(function(){
+    $('.sc-form-group').addClass("form-group col-xs-12 margin-top")
+  });
+</script>
 </body>
 </html>
