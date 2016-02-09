@@ -40,9 +40,10 @@
 <?php get_footer(); ?>
 <script>
   $(document).ready(function(){
-    $('.sc-form-group').addClass("form-group col-xs-12 margin-top")
-    $('.sc-form-group>label').addClass("texto-blanco text-shadow")
-    $('.sc-form-group>input').addClass("form-control")
+    $('.sc-form-group').addClass("form-group col-xs-12 margin-top group-form")
+     $('.group-form').removeClass("sc-form-group")
+    $('.group-form>label').addClass("texto-blanco text-shadow")
+    $('.group-form>input').addClass("form-control")
   });
 </script>
 </body>
