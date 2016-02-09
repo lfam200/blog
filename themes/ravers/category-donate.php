@@ -52,6 +52,36 @@
     $('#sc_uea_custom_amount_1').addClass("form-control")
     $('#sc_uea_custom_amount_1').prop('disabled', true);
 
+    var a = $('#days_number').val();
+    var b = $('#average_water').val();
+    var c = $('#average_number').val();
+
+    var total = a*b*c;
+
+    $('#days_number').change(function(){
+      a = $('#days_number').val();
+      b = $('#average_water').val();
+      c = $('#average_number').val();
+
+      total = a*b*c;
+      $('#sc_uea_custom_amount_1').val(total)
+    })
+    $('#average_water').change(function(){
+      a = $('#days_number').val();
+      b = $('#average_water').val();
+      c = $('#average_number').val();
+
+      total = a*b*c;
+      $('#sc_uea_custom_amount_1').val(total)
+    })
+    $('#average_number').change(function(){
+      a = $('#days_number').val();
+      b = $('#average_water').val();
+      c = $('#average_number').val();
+
+      total = a*b*c;
+      $('#sc_uea_custom_amount_1').val(total)
+    })
   });
 </script>
 </body>
