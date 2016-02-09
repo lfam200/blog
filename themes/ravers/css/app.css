@@ -335,8 +335,8 @@ body{
     min-height: 65em;
 }
 
-.bg-kandi{
-  background: url('../img/bg-kandi.jpg') center no-repeat;
+.bg-kh{
+  background: url('../img/bg-kh.jpg') center no-repeat;
   background-size: cover;
   min-height: 55em;
 }
