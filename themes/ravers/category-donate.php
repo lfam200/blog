@@ -80,7 +80,7 @@
       c = $('#average_number').val();
 
       total = a*b*c;
-      $('#sc_uea_custom_amount_1').val(total)
+      $('#sc_uea_custom_amount_1').val(total).toFixed(2)
     })
   });
 </script>
