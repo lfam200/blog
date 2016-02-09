@@ -47,7 +47,9 @@
     
     $('#average_number').wrap("<div class='input-group'></div>")
     $('#average_number').before("<div class='input-group-addon'>$</div> ")
-    
+    $('.sc-uea-container').addClass("input-group")
+    $('.sc-uea-currency').wrap("<div class='input-group-addon'></div>")
+    $('#sc_uea_custom_amount_1').addClass("form-control")
   });
 </script>
 </body>
