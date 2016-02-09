@@ -50,6 +50,8 @@
     $('.sc-uea-container').addClass("input-group")
     $('.sc-uea-currency').wrap("<div class='input-group-addon'></div>")
     $('#sc_uea_custom_amount_1').addClass("form-control")
+    $('#sc_uea_custom_amount_1').attr("disabled")
+
   });
 </script>
 </body>
