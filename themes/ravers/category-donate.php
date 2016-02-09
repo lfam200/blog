@@ -19,6 +19,16 @@
           ?></h4>
       <div class="bg-form margin-top col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
         <?php the_content(); ?> 
+        <div class="form-group col-xs-12">
+          <p class="text-justify texto-blanco text-shadow">
+            <?php
+             $meta = get_post_meta( get_the_ID(), 'pd' );
+             if( !empty($meta) ) {
+             echo $meta[0];
+             }
+            ?> 
+          </p>
+        </div>
       </div>
     </div>
     <?php endwhile; else : ?>
