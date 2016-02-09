@@ -41,7 +41,8 @@
 <script>
   $(document).ready(function(){
     $('.sc-form-group').addClass("form-group col-xs-12 margin-top")
-    $('.sc-form-group>label').addClass("prueba")
+    $('.sc-form-group>label').addClass("texto-blanco text-shadow")
+    $('.sc-form-group>input').addClass("form-control")
   });
 </script>
 </body>
