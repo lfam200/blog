@@ -51,7 +51,7 @@
     $('.sc-uea-currency').wrap("<div class='input-group-addon'></div>")
     $('#sc_uea_custom_amount_1').addClass("form-control")
     $('#sc_uea_custom_amount_1').prop('disabled', true);
-
+    $('#sc_uea_custom_amount_2').addClass("form-control")
     var a = $('#days_number').val();
     var b = $('#average_water').val();
     var c = $('#average_number').val();
@@ -80,7 +80,7 @@
       c = $('#average_number').val();
 
       total = a*b*c;
-      $('#sc_uea_custom_amount_1').val(total).toFixed(2)
+      $('#sc_uea_custom_amount_1').val(total).totaloFixed(2)
     })
   });
 </script>
