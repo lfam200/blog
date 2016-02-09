@@ -41,6 +41,7 @@
 <script>
   $(document).ready(function(){
     $('.sc-form-group').addClass("form-group col-xs-12 margin-top")
+    $('.sc-form-group>label').addClass("prueba")
   });
 </script>
 </body>
