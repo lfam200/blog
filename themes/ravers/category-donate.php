@@ -41,9 +41,12 @@
 <script>
   $(document).ready(function(){
     $('.sc-form-group').addClass("form-group col-xs-12 margin-top group-form")
-     $('.group-form').removeClass("sc-form-group")
+    $('.group-form').removeClass("sc-form-group")
     $('.group-form>label').addClass("texto-blanco text-shadow")
     $('.group-form>input').addClass("form-control")
+    $('#average_number').before("<div class='input-group'><div class='input-group-addon'>$</div>")
+    $('#average_number').after("</div>")
+    
   });
 </script>
 </body>
