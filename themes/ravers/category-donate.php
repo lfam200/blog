@@ -45,7 +45,7 @@
     $('.group-form>label').addClass("texto-blanco text-shadow")
     $('.group-form>input').addClass("form-control")
     $('#average_number').before("<div class='input-group'><div class='input-group-addon'>$</div>")
-    $('#average_number').after("</div>")
+    $('#average_number').append("</div>")
     
   });
 </script>
