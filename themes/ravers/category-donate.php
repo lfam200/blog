@@ -18,21 +18,12 @@
            }
           ?></h4>
       <div class="bg-form margin-top col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
-        prueba 
+        <?php the_content(); ?> 
       </div>
     </div>
     <?php endwhile; else : ?>
           <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
     <?php endif; ?>
-
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-      <h3 class="texto-blanco text-center text-shadow margin-top-lg">Make a Kandi Trade</h3>
-      <h4 class="texto-blanco text-center text-shadow">Water accesibility program</h4>
-    </div>
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-      <h3 class="texto-blanco text-center text-shadow margin-top-lg">Help Little Warriors</h3>
-      <h4 class="texto-blanco text-center text-shadow">Sanitation & hygiene program</h4>
-    </div>
   </div>
 </div>
 
