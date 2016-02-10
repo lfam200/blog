@@ -8,7 +8,7 @@
         <h3 class="textvideo visible-xs">International Ravers Charity represents the EDM Community worldwide to help in solving one of the most critical problems on the planet today: Water Scarcity in Developing Countries</h3>
       </div>
       <div class="col-xs-12 text-center margin-bottom-lg margin-top-lg">
-        <a href="{{ route('programs') }}#warriors">
+        <a href="https://www.youtube.com/channel/UC1_oGFUL3_FCH_7_8g_kLRQ" target="_blank">
           <button type="button" class="btn btn-success btn-lg textvideo">WATCH OUR VIDEOS</button>
         </a>
       </div>
@@ -33,7 +33,7 @@
         </div>
         <h4 class="title-white text-center">This program aims to bring free water refill for every community in need.</h4>
         <div class="col-xs-12 text-center margin-top-lg ">
-          <a href="{{ route('donate' )}}"><button type="button" class="btn btn-success btn-lg btn-custom">Make a Kandi Trade</button></a>
+          <a href="<?php bloginfo('home') ?>/category/donate#edm_name"><button type="button" class="btn btn-success btn-lg btn-custom">Make a Kandi Trade</button></a>
         </div>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -43,7 +43,7 @@
         </div>
         <h4 class="title-white text-center">The dignity  of a toilet, sink and a shower must be for everyone!</h4>
         <div class="col-xs-12 text-center margin-top-lg ">
-            <a href="{{ route('donate' )}}"><button type="button" class="btn btn-success btn-lg btn-custom">Help Little Warriors</button></a>
+            <a href="<?php bloginfo('home') ?>/category/donate#sc_uea_custom_amount_2"><button type="button" class="btn btn-success btn-lg btn-custom">Help Little Warriors</button></a>
         </div>
       </div>
     </div>

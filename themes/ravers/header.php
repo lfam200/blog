@@ -39,7 +39,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php bloginfo('home'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="International Ravers Charity" height="70"></a>
+      <a class="navbar-brand" href="<?php bloginfo('home'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="International Ravers Charity" height="60"></a>
     </div>
     
     <?php include TEMPLATEPATH . "/templates/nav.php" ?>
