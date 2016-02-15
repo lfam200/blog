@@ -7,7 +7,8 @@ Template Name: Página Blog
 <div class="bg_blog">
   <div class="container ">
     <div class="col-xs-12 ">
-        <p class="text-center text-blog">international ravers charity : BLOG</p>
+        <p class="text-center text-blog hidden-xs hidden-sm">international ravers charity : BLOG</p>
+        <p class="text-center text-blog-sm visible-xs visible-sm">international ravers charity : BLOG</p>
     </div>
   </div>
 </div>

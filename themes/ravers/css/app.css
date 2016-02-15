@@ -789,6 +789,12 @@ canvas {
   font-size: 3.5em;
   text-shadow: 2px 2px 2px #000;
 }
+.text-blog-sm{
+  color: white;
+  margin-top: 50%;
+  font-size: 3em;
+  text-shadow: 2px 2px 2px #000;
+}
 
 .cat{
   background:#006EFF;
@@ -957,6 +963,13 @@ canvas {
   color: white;
   margin-top: 25%;
   font-size: 3.5em;
+  text-shadow: 2px 2px 2px #000;
+}
+.desc-cat-sm>p{
+  text-align: center;
+  color: white;
+  margin-top: 50%;
+  font-size: 2.2em;
   text-shadow: 2px 2px 2px #000;
 }
 

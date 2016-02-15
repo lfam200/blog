@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <div class="white">
+<div class="container">
   <div class="row">
     <div class="col-xs-10 col-xs-offset-1 margin-bottom-lg margin-top-lg">
       <h3 class=" text-center visible-md visible-lg"><strong>3.4 MILLION</strong>  people die yearly by <strong>water</strong> related problems around the world. <br> That's the same <strong>NUMBER OF RAVERS</strong> who attend to the 20 biggest <strong>EDM FESTIVALS WORLDWIDE.</strong></h3>
@@ -7,6 +8,8 @@
       <h2 class="text-center "><strong>WE CAN DO ANYTHING?</strong></h2>
     </div>
   </div>
+</div>
+  
   <div class="row bg-kh">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">

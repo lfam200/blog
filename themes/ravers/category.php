@@ -13,7 +13,9 @@
 <!-- Imagen principal y descripcion de la categoria-->
 <div class="bg_blog">
   <div class="container ">
-    <div class="col-xs-12 desc-cat"><?php echo category_description();?></div>
+
+    <div class="col-xs-12 desc-cat hidden-xs hidden-sm"><?php echo category_description();?></div>
+    <div class="col-xs-12 desc-cat-sm visible-xs visible-sm"><?php echo category_description();?></div>
   </div>
 </div>
 
@@ -40,9 +42,9 @@
       ?>
       <div class="col-xs-12">
         <!-- videos water sanitation programs -->
-        <div class="cat col-xs-4 texto-blanco text-left">Water accesibility program</div>
-        <div class="col-xs-4"></div>
-        <div class="cat col-xs-4 col-xs-offset-2 texto-blanco text-right">Sanitation & hygiene project</div>
+        <div class="cat col-xs-12 col-sm-12 col-md-4 col-lg-4 texto-blanco text-left">Water accesibility program</div>
+        <div class="col-md-4 col-lg-4 visible-md visible-lg"></div>
+        <div class="cat col-md-4 col-lg-4 col-md-offset-2 col-lg-offset-2 texto-blanco text-right visible-md visible-lg">Sanitation & hygiene project</div>
         <div class="title_border col-xs-12"></div>
         <!-- video 1 -->
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 margin-top">
@@ -55,8 +57,10 @@
               </a>
           </div>
         </div>
-        <div class="col-xs-2"></div> 
+        <div class="col-xs-2 visible-md visible-lg"></div> 
         <!-- video 2 -->
+        <div class="cat  texto-blanco col-xs-12 col-sm-12 col-md-4 col-lg-4 text-left visible-xs visible-sm">Sanitation & hygiene project</div>
+        <div class="title_border col-xs-12 visible-xs visible-sm"></div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 margin-top">
           <div class="embed-responsive embed-responsive-16by9">
             <iframe class="center-block shadow embed-responsive-item" width="80%" src="https://www.youtube.com/embed/7x0Y9eIwurw" frameborder="0" allowfullscreen></iframe>
@@ -68,7 +72,7 @@
           </div>
         </div>
 
-        <div class="col-xs-12">
+        <!-- <div class="col-xs-12"> -->
       <?php
           $idObj = get_query_var('cat');
           $args = array(
@@ -90,27 +94,28 @@
           foreach ($categories as $category) : 
               $name = $category->name;
           ?>
-          <div class="cat col-xs-4 texto-blanco text-left">
+          <div class="cat col-xs-12 col-sm-12 col-md-4 col-lg-4 texto-blanco text-left">
             <a class="a_nolink" href="<?php bloginfo('home') ?>/category/<?php echo get_cat_slug($id_cat); ?>/<?php echo $category->slug ?>"><?php echo $name;?></a>
           </div>
           <div class="title_border col-xs-12"></div>
-          <div class="col-xs-12">
+          <!-- <div class="col-xs-12"> -->
           <!-- Start the Loop. -->
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
           <?php if ( in_category( $category->slug ) ) : ?>
-            <div class="post">
-              <div class="entry">
-                <div class="col-xs-12 padding-top-lg">
-                  <div class="col-xs-3 padding-top-lg">
-                    <?php the_post_thumbnail('my-size'); ?>
+            
+              
+                <div class="padding-top-lg">
+                  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 padding-top-lg">
+                    <?php the_post_thumbnail('my-size',array('class' => 'center-block')); ?>
                   </div>
-                  <div class="col-xs-6">
-                    <div class="col-xs-12">
-                      <h4 class="text-left "> <?php the_title(); ?></h4> 
-                      <?php the_excerpt();?>
+                  <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <h4 class="text-left visible-md visible-lg"> <?php the_title(); ?></h4> 
+                      <h4 class="text-center hidden-md hidden-lg"> <?php the_title(); ?></h4> 
+                      <div class="visible-md visible-lg"><?php the_excerpt();?></div>
                     </div>
                     <div class="col-xs-12">
-                      <div class="col-xs-4">
+                      <div class="col-xs-12">
                         <a href="<?php the_permalink(); ?>">
                           <button type="button" class="btn btn-success">Read More</button>
                         </a>
@@ -121,8 +126,8 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
+             
+           
           <?php else : ?>
             <div class="post"></div>
           <?php endif; ?>
@@ -132,15 +137,15 @@
                 <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
                 <!-- REALLY stop The Loop. -->
           <?php endif; ?>
-          </div>
+          <!-- </div> -->
           <?php  endforeach; ?>
-          <div class="cat col-xs-4 texto-blanco text-left">OUR COMPLETED PROJECTS</div>
+          <div class="cat col-xs-12 col-sm-12 col-md-4 col-lg-4 texto-blanco text-left">OUR COMPLETED PROJECTS</div>
           <div class="title_border col-xs-12"></div>
           <div class="col-xs-12 margin-top margin-bottom-lg">
             <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Sidebar Map')) : ?>
             <?php endif; ?>
           </div>
-        </div>
+        <!-- </div> -->
       </div> 
 
       <?php
