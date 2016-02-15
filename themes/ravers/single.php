@@ -100,19 +100,29 @@
 
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
           <div class="col-xs-10 col-xs-offset-1 margin-top">
-            <h2 class="text-center"><?php the_title(); ?></h2>
+            <h2 class="text-center visible-md visible-lg"><?php the_title(); ?></h2>
+            <h4 class="text-center hidden-md hidden-lg"><?php the_title(); ?></h4>
             <p class="text-center">
-              <small>
+              <small class="visible-md visible-lg">
                 <a href="<?php bloginfo('home'); ?>/blog">Blog Home</a> | <?php the_time('m.d.Y'); ?> By <?php the_author(', '); ?> | Updates
-               </small>
+              </small>
+              <small class="hidden-md hidden-lg">
+                <a href="<?php bloginfo('home'); ?>/blog">Blog Home</a> | <?php the_time('m.d.Y');?> | Updates
+              </small>
             </p>
-            <div class="col-xs-12">
-            <figure class="img-responsive">
+            <div class="visible-xs visible-sm">
               <?php the_post_thumbnail('destacado_post', array('class' => 'img img-responsive')); ?>
-            </figure>
+            </div>
+            <div class="col-xs-12 visible-md visible-lg">
+              
+                <?php the_post_thumbnail('destacado_post', array('class' => 'img img-responsive')); ?>
               
             </div>
-            <div class="col-xs-10 col-xs-offset-1 margin-top-lg margin-bottom-lg">
+            <div class="col-xs-10 text-justify col-xs-offset-1 margin-top-lg margin-bottom-lg visible-md visible-lg">
+              <?php the_content(); ?>
+              By <?php the_author(', '); ?>
+            </div>
+            <div class="row text-justify margin-top-lg margin-bottom-lg hidden-md hidden-lg">
               <?php the_content(); ?>
               By <?php the_author(', '); ?>
             </div>
