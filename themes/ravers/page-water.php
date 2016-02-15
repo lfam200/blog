@@ -39,7 +39,7 @@ Template Name: Página Water
               <p class="text-center text-estandar">A glass of water, a shower and a toilet are 3 things that 1 in 9 people have no access on this planet. 2.5 billion people lack access to improve their sanitary facilities, while 786 million of them lack access to drinking water.</p>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
-               <img src="<?php bloginfo('template_directory'); ?>/img/mapa.png" alt="Water Planet" width="100%" class="center-block margin-bottom-lg" >
+               <img src="<?php bloginfo('template_directory'); ?>/img/mapa.png" alt="Current Crisis" width="100%" class="center-block margin-bottom-lg" >
             </div>
         </div>
         <div class="row margin-bottom-lg">
@@ -78,8 +78,8 @@ Template Name: Página Water
               
           </div> 
           <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-            <img src="<?php bloginfo('template_directory'); ?>/img/negative.png" alt="Water Planet" width="60%" class="center-block vertical_1 visible-md visible-lg" >
-            <img src="<?php bloginfo('template_directory'); ?>/img/negative.png" alt="Water Planet" width="60%" class="center-block visible-xs visible-sm margin-top  " >
+            <img src="<?php bloginfo('template_directory'); ?>/img/negative.png" alt="Negative Impact" width="60%" class="center-block vertical_1 visible-md visible-lg" >
+            <img src="<?php bloginfo('template_directory'); ?>/img/negative.png" alt="Negative Impact" width="60%" class="center-block visible-xs visible-sm margin-top  " >
           </div>   
         </div>
       </div>
@@ -90,21 +90,21 @@ Template Name: Página Water
         <h2 class="text-center">Positive Impact</h2>
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-            <img src="<?php bloginfo('template_directory'); ?>/img/21p.png" alt="Water Planet" width="70%" class="center-block margin-top-lg margin-bottom-lg" >
+            <img src="<?php bloginfo('template_directory'); ?>/img/21p.png" alt="Positive Impact" width="70%" class="center-block margin-top-lg margin-bottom-lg" >
             <p class="text-center margin-bottom-lg text-estandar">Clean water alone can reduce water – related deaths by 21%</p>
           </div>
           <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-            <img src="<?php bloginfo('template_directory'); ?>/img/37p.png" alt="Water Planet" width="70%" class="center-block margin-top-lg margin-bottom-lg" >
+            <img src="<?php bloginfo('template_directory'); ?>/img/37p.png" alt="Positive Impact" width="70%" class="center-block margin-top-lg margin-bottom-lg" >
             <p class="text-center margin-bottom-lg text-estandar">Clean water alone can reduce water – related deaths by 37.5%</p>
           </div>
           <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-            <img src="<?php bloginfo('template_directory'); ?>/img/35p.png" alt="Water Planet" width="70%" class="center-block margin-top-lg margin-bottom-lg" >
+            <img src="<?php bloginfo('template_directory'); ?>/img/35p.png" alt="Positive Impact" width="70%" class="center-block margin-top-lg margin-bottom-lg" >
             <p class="text-center margin-bottom-lg text-estandar">Clean water alone can reduce water – related deaths by 35%</p>
           </div>
 
           <div class="col-xs-12 panel panel-default text-center">
             <p class="text-center text-estandar">Invest in improving access to safe water contributes to economic growth. For every $ 1 invested the World Health Organization (WHO) estimates a return of $ 3- $ 34 US dollars to the global economy.</p>
-            <a href="<?php bloginfo('home'); ?>/donate"><button type="button" class="btn btn-success btn-lg btn-custom">Donate</button></a>
+            <a href="<?php bloginfo('home'); ?>/category/donate"><button type="button" class="btn btn-success btn-lg btn-custom">Donate</button></a>
           </div>
         
         </div>

@@ -14,9 +14,9 @@
            <ul class="list-unstyled menu-footer">
 
                <li><a class="texto-blanco" href="#"><strong>GET INVOLVED</strong></a></li>
-               <li><a class="texto-oscuro" href="<?php bloginfo('home'); ?>/donate">Donate</a></li>
-               <li><a class="texto-oscuro" href="<?php bloginfo('home'); ?>/donate">Kandi Trade</a></li>
-               <li><a class="texto-oscuro" href="<?php bloginfo('home'); ?>/programs#warriors">Help Little Warriors</a></li>
+               <li><a class="texto-oscuro" href="<?php bloginfo('home'); ?>/category/donate">Donate</a></li>
+               <li><a class="texto-oscuro" href="<?php bloginfo('home'); ?>/category/donate#edm_name">Kandi Trade</a></li>
+               <li><a class="texto-oscuro" href="<?php bloginfo('home'); ?>/category/donate#sc_uea_custom_amount_2">Help Little Warriors</a></li>
                <li><a class="texto-oscuro" href="<?php bloginfo('home'); ?>/dj-birthday">DJ Birthday Challenge</a></li>
                <li><a class="texto-oscuro" href="<?php bloginfo('home'); ?>/volunteers">International Ravers Volunteer</a></li>
 

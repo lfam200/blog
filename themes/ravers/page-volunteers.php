@@ -20,18 +20,21 @@ Template Name: Página Volunteers
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         <img src="<?php bloginfo('template_directory'); ?>/img/office.jpg" class="img-circle center-block img-shadow margin-bottom" width="70%" alt="Office Volunteers">
         <h3 class="text-center">Office volunteers</h3>
-        <p class="text-justify margin-center">We always welcome to people who want to come and help out in our office. We work mostly with internet so it doesn't matter where you are, if you have internet you can work with us.</p>
+        <p class="text-justify margin-center hidden-xs hidden-sm">We always welcome to people who want to come and help out in our office. We work mostly with internet so it doesn't matter where you are, if you have internet you can work with us.</p>
+        <p class="text-justify visible-xs visible-sm">We always welcome to people who want to come and help out in our office. We work mostly with internet so it doesn't matter where you are, if you have internet you can work with us.</p>
         
       </div>
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         <img src="<?php bloginfo('template_directory'); ?>/img/edm.jpg" class="img-circle center-block img-shadow margin-bottom" width="70%" alt="EDM Volunteers">
         <h3 class="text-center">EDM events volunteers</h3>
-        <p class="text-justify margin-center">We know you love rave but suddenly you don't know how much an EDM festival pollutes the planet. Become an International Raver Volunteer and help us generate less environmental impact after every festival.</p>
+        <p class="text-justify margin-center hidden-xs hidden-sm">We know you love rave but suddenly you don't know how much an EDM festival pollutes the planet. Become an International Raver Volunteer and help us generate less environmental impact after every festival.</p>
+        <p class="text-justify visible-xs visible-sm">We know you love rave but suddenly you don't know how much an EDM festival pollutes the planet. Become an International Raver Volunteer and help us generate less environmental impact after every festival.</p>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         <img src="<?php bloginfo('template_directory'); ?>/img/fieldtrip.jpg" class="img-circle center-block img-shadow margin-bottom" width="70%" alt="Go on to a field trip">
         <h3 class="text-center">Go on to a field trip</h3>
-        <p class="text-justify margin-center">Want to change the world, learn about new cultures, build relationship with incredible people, save lives and transform communities?</p>
+        <p class="text-justify margin-center hidden-xs hidden-sm">Want to change the world, learn about new cultures, build relationship with incredible people, save lives and transform communities?</p>
+        <p class="text-justify visible-xs visible-sm">Want to change the world, learn about new cultures, build relationship with incredible people, save lives and transform communities?</p>
       </div>
       
     </div>
@@ -52,15 +55,22 @@ Template Name: Página Volunteers
       </div>
       <p class="text-center text-estandar">or</p>
       <p class="text-center text-estandar margin-center-lg margin-top margin-bottom visible-md visible-lg">Fill your data and according to these, organizations with <br>causes of your interest will contact you</p>
-      <p class="text-justify text-estandar margin-center margin-top margin-bottom visible-xs visible-sm">Fill your data and according to these, organizations with causes of your interest will contact you</p>
+      <p class="text-justify text-estandar margin-top margin-bottom visible-xs visible-sm">Fill your data and according to these, organizations with causes of your interest will contact you</p>
       
     </div>
 
     <div class="row margin-top-lg">
       <div class="panel panel-default col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
-        
-          <form action="/volunt" method="POST" class="form-horizontal margin-top-lg">
-                    {{ csrf_field() }}
+        <?php if (have_posts()) : while (have_posts()) : the_post();?>
+         <div class="post">
+          <h2 id="post-<?php the_ID(); ?>"><?php the_title();?></h2>
+          <div class="entrytext">
+           <?php the_content(); ?>
+          </div>
+         </div>
+         <?php endwhile; endif; ?>
+         
+       <!--  <form action="/volunt" method="POST" class="form-horizontal margin-top-lg">
             <div class="div-border col-xs-12">
               <div class="form-group">
                 <label for="inputName" class="col-sm-4 control-label">name</label>
@@ -450,9 +460,6 @@ Template Name: Página Volunteers
               <div class="checkbox col-xs-6 col-sm-4">
                 
               </div>
-              
-  
-
             </div>
             <div class="div-border col-xs-12 margin-bottom-lg padding-bottom">
               <h2 class="text-center margin-bottom">When are you free?</h2>
@@ -660,11 +667,7 @@ Template Name: Página Volunteers
                   <input type="checkbox"> 
                 </label>
               </div>
-              
-  
-
             </div>
-
             <div class="div-border col-xs-12 margin-bottom-lg padding-bottom">
               <h2 class="text-center margin-bottom">Your contribution</h2>
               <h3 class="text-center margin-bottom">We know you're  talented. Feel free to select more than one!</h3>
@@ -703,21 +706,17 @@ Template Name: Página Volunteers
                   <input type="checkbox"> Contact me for last minute events.
                 </label>
               </div>
-              
-  
-
             </div>
             <div class="div-border col-xs-12 margin-bottom-lg padding-bottom">
               <h2 class="text-center margin-bottom">Anything else you want us <br> to know?</h2>
               <textarea class="form-control" rows="5" placeholder="Begin typing here"></textarea>
             </div>
-
             <div class="form-group">
               <div class="col-xs-12 text-center">
                 <button type="submit" class="btn btn-success btn-lg">Submit</button>
               </div>
             </div>
-          </form>
+        </form> -->
       </div>  
     </div>
     <div class="row margin-top-lg margin-bottom-lg">

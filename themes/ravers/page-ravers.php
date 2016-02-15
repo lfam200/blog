@@ -9,8 +9,8 @@ Template Name: Página Ravers
   <div class="green">
     <div class="container ">
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 margin-bottom-lg">
-          <h2 class="textvideo visible-md visible-lg">WE ALL  TOGETHER CAN MAKE A WORLD BETTER</h2>
-          <h3 class="textvideo visible-xs visible-sm">WE ALL  TOGETHER CAN MAKE A WORLD BETTER</h3>
+          <h2 class="textvideo visible-md visible-lg text-uppercase">we all together can make a world better</h2>
+          <h3 class="textvideo visible-xs visible-sm text-uppercase">we all together can make a world better</h3>
           <p class="text-center text-standar texto-blanco margin-bottom-lg">If we say that  the internet  pushed the development of this culture, we are not wrong, but if we look beyond our "Smartphones" we can realize that this culture and this industry grew of hand long before the internet and mobile devices were affordable worldwide. It grew thanks to easy access to water both for drinking and hygiene for use in bathrooms.</p>
       </div>
     </div>
@@ -205,8 +205,8 @@ Template Name: Página Ravers
             <p class="text-justify texto-blanco">According MayoClinic.org is estimated that women should consume 2.2 liters of water daily, while it is estimated that men should consume about three liters a day. Most festivals sell plastic water bottles 20 fluid ounces (equivalent to 0.591 liters), which means that every raver should drink at least four bottles of water each day. <br><br>A study at the Glastonbury Festival of water consumed, said they had a total audience of 730,000 in five days. Glastonbury uses 10,000 m3 during the event. So 10000000 (Lts) / 730000 (Hearing) = 13.69 l / 4 nights of festival = 3.4 liters of water every day or 6 bottles of water each day festival</p>
           </div>
           <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 margin-bottom-xlg">
-            <img src="<?php bloginfo('template_directory'); ?>/img/water.png" alt="Water Planet" width="60%" class="center-block vertical_2 visible-md visible-lg" >
-            <img src="<?php bloginfo('template_directory'); ?>/img/water.png" alt="Water Planet" width="60%" class="center-block visible-xs visible-sm" >
+            <img src="<?php bloginfo('template_directory'); ?>/img/water.png" alt="Water we drink" width="60%" class="center-block vertical_2 visible-md visible-lg" >
+            <img src="<?php bloginfo('template_directory'); ?>/img/water.png" alt="Water we drink" width="60%" class="center-block visible-xs visible-sm" >
           </div>
         </div>
       </div>
@@ -269,7 +269,7 @@ Template Name: Página Ravers
         <div class="row">
           
           <div class="col-xs-12 text-center margin-bottom-xlg">
-            <a href="<?php bloginfo('home');?>/donate"><button type="button" class="btn btn-success btn-lg btn-custom">Make a Kandi Trade</button></a>
+            <a href="<?php bloginfo('home');?>/category/donate#edm_name"><button type="button" class="btn btn-success btn-lg btn-custom">Make a Kandi Trade</button></a>
           </div>
         </div>
 

@@ -35,7 +35,7 @@ Template Name: Página Blog
               'feed'               => '',
               'feed_type'          => '',
               'feed_image'         => '',
-              'exclude'            => '1',
+              'exclude'            => '1,874',
               'exclude_tree'       => '13',
               'include'            => '',
               'hierarchical'       => 1,

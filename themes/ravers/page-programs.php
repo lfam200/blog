@@ -37,7 +37,7 @@ Template Name: Página Programs
                         <li class="title-white text-justify  margin-right margin-top">We will also distribute, portable water filters for schools and communities with no pipes. These filters can give clean water for one person for an entire year.</li>
                     </ul>
                     <div class="col-xs-12 text-center margin-top-lg ">
-                        <a href="<?php bloginfo('home'); ?>/donate">
+                        <a href="<?php bloginfo('home'); ?>/category/donate#edm_name">
                             <button type="button" class="btn btn-warning btn-lg btn-custom">Make a Kandi Trade</button>
                         </a>
                     </div>
@@ -53,7 +53,7 @@ Template Name: Página Programs
                         <li class="title-white text-justify  margin-right margin-top">There are more cellphones than toilets now a days, did you know that?</li>
                     </ul>
                     <div class="col-xs-12 text-center margin-top-lg ">
-                        <a href="<?php bloginfo('home'); ?>/donate"><button type="button" class="btn btn-warning btn-lg btn-custom">Help Little Warriors</button></a>
+                        <a href="<?php bloginfo('home'); ?>/category/donate#sc_uea_custom_amount_2"><button type="button" class="btn btn-warning btn-lg btn-custom">Help Little Warriors</button></a>
                     </div>
                 </div>
                
