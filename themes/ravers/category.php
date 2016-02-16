@@ -186,7 +186,7 @@
                   $cat = $category->name;
                   $len = strlen($cat);
                   if($len > 2){
-                    echo "<div class='col-xs-3'><div class='center-block month-dj'><p class='text-center text-vertical texto-blanco'><a class='a_nolink' href='".$cat."'>";
+                    echo "<div class='col-xs-6 col-sm-6 col-md-3 col-lg-3'><div class='center-block month-dj'><p class='text-center text-vertical texto-blanco'><a class='a_nolink' href='".$cat."'>";
                     $rest = substr($cat, 0, 3);
                     echo $rest;
                     echo "</a></p></div></div>";
@@ -226,7 +226,7 @@
                            ); 
                 $categories = get_categories($args);
               ?>
-              <div class="col-xs-8 col-xs-offset-2">
+              <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 ">
                 <h1 class="text-center"><?php echo single_cat_title("",false); ?></h1>
                 <table width="100%" border="1" id="calendario_tabla" class="margin-bottom-lg"> 
                   
@@ -341,33 +341,31 @@
               if($g == '-'){
               ?>
               <div class="col-xs-12">
-                <div class="cat col-xs-4 texto-blanco text-left">TODAY'S BIRTHDAYS</div>
+                <div class="cat col-xs-12 col-sm-12 col-md-4 col-lg-4 texto-blanco text-left">TODAY'S BIRTHDAYS</div>
                 <div class="title_border col-xs-12"></div>
                 <div class="col-xs-12">
                 <!-- Start the Loop. -->
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                  <div class="post">
-                    <div class="entry">
-                      <div class="col-xs-4 padding-top-lg">
-                        <div class="col-xs-12 padding-top-lg">
-                          
-                          <?php the_post_thumbnail('my-size', array('class' => 'img img-responsive center-block')); ?>
-                          
-                        </div>
-                        <div class="col-xs-12">
-                          <div class="col-xs-12">
-                            <h4 class="text-center"> <?php the_title(); ?></h4> 
-                            <?php the_excerpt();?>
-                          </div>
-                          <div class="col-xs-12">
-                            <a href="<?php the_permalink(); ?>" >
-                              <button type="button" class="btn btn-success btn-lg center-block">Read Post</button>
-                            </a>
-                          </div>
-                        </div>
+                  <div class="padding-top-lg">
+                  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 padding-top-lg">
+                    <?php the_post_thumbnail('my-size',array('class' => 'center-block')); ?>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <h4 class="text-left visible-md visible-lg"> <?php the_title(); ?></h4> 
+                      <h4 class="text-center hidden-md hidden-lg"> <?php the_title(); ?></h4> 
+                      <div class="visible-md visible-lg"><?php the_excerpt();?></div>
+                    </div>
+                    <div class="col-xs-12">
+                      <div class="col-xs-12">
+                        <a href="<?php the_permalink(); ?>">
+                          <button type="button" class="btn btn-success">Read Post</button>
+                        </a>
                       </div>
+                      
                     </div>
                   </div>
+                </div>
                 <?php endwhile; else : ?>
                       <!-- The very first "if" tested to see if there were any Posts to -->
                       <!-- display.  This "else" part tells what do if there weren't any. -->
@@ -375,10 +373,10 @@
                       <!-- REALLY stop The Loop. -->
                 <?php endif; ?>
                 </div>
-                <div class="col-xs-12">
+                <div class="col-xs-12 margin-top">
                   <p class="text-right">TOTAL OF THIS MONTH: <br>$0.00</p>
                 </div>
-                <div class="cat col-xs-4 texto-blanco text-left">FREE WATER REFILL</div>
+                <div class="cat col-xs-12 col-sm-12 col-md-4 col-lg-4 texto-blanco text-left">FREE WATER REFILL</div>
                 <div class="title_border col-xs-12"></div>
                 <div class="col-xs-12">
                 <!-- Start the Loop. -->
@@ -417,7 +415,7 @@
                       <!-- REALLY stop The Loop. -->
                 <?php endif; ?>
                 </div>
-                <div class="cat col-xs-4 texto-blanco text-left">OUR COMPLETED PROJECTS</div>
+                <div class="cat col-xs-12 col-sm-12 col-md-4 col-lg-4 texto-blanco text-left">OUR COMPLETED PROJECTS</div>
                 <div class="title_border col-xs-12"></div>
                 <div class="col-xs-12 margin-top margin-bottom-lg">
                   <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Sidebar Map')) : ?>

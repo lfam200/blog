@@ -976,7 +976,7 @@ canvas {
 .prev-next{
   background:#EAEAEA;
   border: solid 1px #000;
-  height: 6em;
+  min-height: 6em;
 }
 
 .nav-previous{

@@ -147,8 +147,8 @@
 <div class="prev-next">
   <div class="container">
     <div class="row">
-      <div class="nav-previous col-xs-6 text-right"><?php previous_post_link('&#8249; %link', '%title', 'Previous post in category', TRUE); ?> </div>
-      <div class="nav-next col-xs-6 text-left"><?php next_post_link('%link &#8250;', '%title', 'Next post in category', TRUE); ?> </div>
+      <div class="nav-previous col-xs-12 col-sm-12 col-md-6 col-lg-6 text-right"><?php previous_post_link('&#8249; %link', '%title', 'Previous post in category', TRUE); ?> </div>
+      <div class="nav-next col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left"><?php next_post_link('%link &#8250;', '%title', 'Next post in category', TRUE); ?> </div>
     </div>                    
   </div><!-- end of #nav-single -->
 </div>
