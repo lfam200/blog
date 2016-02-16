@@ -10,12 +10,12 @@
     <div class="row">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       <div class="col-xs-12 border-dj margin-top-lg margin-bottom-lg">
-        <div class="col-xs-4">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
           <figure class="margin-center-vert">
             <?php the_post_thumbnail('destacado_dj', array('class' => 'img img-responsive img-circle')); ?>
           </figure>
         </div>
-        <div class="col-xs-8">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
           <h2 class="text-center margin-top-center"><?php the_title(); ?></h2>
           <p class="text-center"><small>
           <?php
@@ -30,10 +30,10 @@
         </div>
       </div>
       <div class="col-xs-12">
-        <div class="col-xs-8">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
           <?php the_content(); ?>
         </div>
-        <div class="col-xs-4">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
           <div class="t-blue col-xs-4 texto-blanco text-left">FOLLOW HIM</div>
           <div class="title_border col-xs-12"></div>
           <div class="col-xs-12 margin-bottom-lg">
