@@ -3,6 +3,7 @@
   <div class="container">
     <div class="row">
       <div id="vmap" style="width: 100%; height: 40em;"></div>
+      <input type="hidden" id="home" value="<?php bloginfo('home');  ?>/category/">
     </div>
   </div>
 </div>  
@@ -15,11 +16,11 @@ $(document).ready(function() {
   $('#vmap').vectorMap(
     {
         map: 'world_en',
-        backgroundColor: '#a5bfdd',
+        backgroundColor: '#ffffff',
         borderColor: '#818181',
         borderOpacity: 0.25,
         borderWidth: 1,
-        color: '#f4f3f0',
+        color: '#fafafa',
         enableZoom: true,
         hoverColor: '#c9dfaf',
         hoverOpacity: null,
@@ -30,12 +31,18 @@ $(document).ready(function() {
         showTooltip: true,
         onRegionClick: function(element, code, region)
         {
-            var message = 'You clicked "'
-                + region
-                + '" which has the code: '
-                + code.toUpperCase();
 
-            alert(message);
+          region = region.toLowerCase().replace(/ /g,'-').replace(/[^\w-]+/g,'')
+          var direccion = $('#home').val()
+          direccion = direccion + region
+          // alert(direccion);
+          window.location.href = direccion;
+          //   var message = 'You clicked "'
+          //       + region
+          //       + '" which has the code: '
+          //       + code.toUpperCase();
+
+            // alert(message);
         }
     }
 
