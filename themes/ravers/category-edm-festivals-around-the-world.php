@@ -20,7 +20,7 @@ $(document).ready(function() {
         borderColor: '#818181',
         borderOpacity: 0.25,
         borderWidth: 1,
-        color: '#fafafa',
+        color: '#0080FF',
         enableZoom: true,
         hoverColor: '#c9dfaf',
         hoverOpacity: null,

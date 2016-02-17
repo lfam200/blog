@@ -18,6 +18,7 @@
           the_title();
         }
       } 
+      if(is_404()){ echo 'Page not found';}
     ?> | International Ravers Charity.
   </title>
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
