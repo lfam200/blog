@@ -11,7 +11,9 @@
 
 ?>
 <!-- Imagen principal y descripcion de la categoria-->
-<div class="bg_blog">
+<div class="bg_blog bg_<?php echo $slug; ?> ">
+  <input type="hidden" id="edm_country" value="<?php echo $slug; ?>">
+  <input type="hidden" id="href" value="<?php bloginfo('template_directory'); ?>">
   <div class="container ">
 
     <div class="col-xs-12 desc-cat hidden-xs hidden-sm"><?php echo category_description();?></div>
@@ -24,9 +26,15 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 margin-bottom">
-        <h3 class="texto-blanco text-right">
-          <a href="<?php bloginfo('home');?>/blog" class="a_nolink">Categories</a>
-        </h3>
+        <div class="col-xs-6">
+          <h2 class="texto-blanco text-left texto_sombra">#HashTag</h2>
+        </div>
+        <div class="col-xs-6">
+          <h3 class="texto-blanco text-right">
+            <a href="<?php bloginfo('home');?>/blog" class="a_nolink">Categories</a>
+          </h3>
+        </div>
+
       </div>
     </div>
   </div>
@@ -52,7 +60,7 @@
             <iframe class="center-block shadow embed-responsive-item" width="80%" src="https://www.youtube.com/embed/qOLZTZpjXQo" frameborder="0" allowfullscreen></iframe>
           </div>
           <div class="col-xs-12 text-center margin-top-lg ">
-              <a href="<?php bloginfo('home'); ?>/donate">
+              <a href="<?php bloginfo('home'); ?>/programs#green">
                 <button type="button" class="btn btn-success btn-lg btn-custom">Ver mas</button>
               </a>
           </div>
@@ -66,7 +74,7 @@
             <iframe class="center-block shadow embed-responsive-item" width="80%" src="https://www.youtube.com/embed/7x0Y9eIwurw" frameborder="0" allowfullscreen></iframe>
           </div>
           <div class="col-xs-12 text-center margin-top-lg ">
-            <a href="<?php bloginfo('home'); ?>/donate">
+            <a href="<?php bloginfo('home'); ?>/programs#green">
               <button type="button" class="btn btn-success btn-lg btn-custom">Ver mas</button>
             </a>
           </div>
@@ -453,6 +461,14 @@
         color = '#'
       })
       
+      var directorio = $('#href').val();
+      var country = $('#edm_country').val();
+      var clave = ".bg_"+country;
+      $(clave).css({
+        "background" : "url('"+directorio+"/img/banderas/"+country+".jpg') center no-repeat",
+        "background-size" : "cover"
+
+      })
     })
         
 </script>

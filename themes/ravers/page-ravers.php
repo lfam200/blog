@@ -257,7 +257,7 @@ Template Name: Página Ravers
             <h3 class="text-left visible-xs">Non-recyclable Waste <br><br><small>TENTS</small></h3>
             
             <p class="text-justify margin-bottom-lg text-estandar">Each year tens of thousands of tents and other camping goods are discarded by festival goers worldwide. On average 1 in 5 tents are left outdoors. If we talk only 10 of the most popular festivals, where a number of not less than 100,000 people attending tents totaling 1,000,000 of which 100,000 are abandoned. <br>
-            <br>1 tent = $ 30.00 * 100,000 (abandoned) = $ 3,000,000
+            <br>1 tent = USD 30 * 100,000 (abandoned) = USD 3,000,000
             <br>1 tent = 4 kg of waste * 100,000 = 400,000 tons of waste.
             <br>The equivalent: 1,000,000 beers / weight of 100 elephants</p>  
           </div> 
