@@ -8,6 +8,9 @@ Template Name: Página DJ
   <img src="<?php bloginfo('template_directory'); ?>/img/dj10.png" alt="" class="img img-responsive" width="100%">
 </div>
 <div class="white">
+  <div class="container">
+    
+  
   <?php 
     date_default_timezone_set('UTC');
     $mes = date("F");
@@ -139,7 +142,7 @@ Template Name: Página DJ
   </table>
   
   </div>
-
+  </div>
 </div>
 <div class="green">
   <img src="<?php bloginfo('template_directory'); ?>/img/dj11.png" alt="" class="img img-responsive" width="100%">
