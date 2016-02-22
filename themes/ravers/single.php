@@ -202,10 +202,10 @@
             <h4 class="text-center hidden-md hidden-lg"><?php the_title(); ?></h4>
             <p class="text-center">
               <small class="visible-md visible-lg">
-                <a href="<?php bloginfo('home'); ?>/blog">Blog Home</a> | <?php the_time('m.d.Y'); ?> By <?php the_author(', '); ?> | Updates
+                <a href="<?php bloginfo('home'); ?>/blog">Blog Homeaaaaa</a> | <?php the_time('m.d.Y'); ?> By <?php the_author(', '); ?> | Updates
               </small>
               <small class="hidden-md hidden-lg">
-                <a href="<?php bloginfo('home'); ?>/blog">Blog Home</a> | <?php the_time('m.d.Y');?> | Updates
+                <a href="<?php bloginfo('home'); ?>/blog">Blog Homeaaaaa</a> | <?php the_time('m.d.Y');?> | Updates
               </small>
             </p>
             <div class="visible-xs visible-sm">
