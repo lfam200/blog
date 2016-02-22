@@ -20,7 +20,7 @@ Template Name: Página DJ
     }
     
     $idObj = get_category_id($mes);
-    echo $idObj;
+    // echo $idObj;
     $args = array(
                 'type'                     => 'post',
                 'child_of'                 => $idObj,

@@ -461,14 +461,31 @@
         color = '#'
       })
       
+
+      function UrlExists(url)
+      {
+          var http = new XMLHttpRequest();
+          http.open('HEAD', url, false);
+          http.send();
+          return http.status!=404;
+      }
+
       var directorio = $('#href').val();
       var country = $('#edm_country').val();
       var clave = ".bg_"+country;
-      $(clave).css({
-        "background" : "url('"+directorio+"/img/banderas/"+country+".jpg') center no-repeat",
-        "background-size" : "cover"
 
-      })
+      var dir = directorio+"/img/banderas/"+country+".jpg";
+
+      var status = UrlExists(dir);
+     
+      if(status){
+        $(clave).css({
+          "background" : "url('"+directorio+"/img/banderas/"+country+".jpg') center no-repeat",
+          "background-size" : "cover"
+
+        })
+      }
+      
     })
         
 </script>
