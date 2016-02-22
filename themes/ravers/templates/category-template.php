@@ -7,22 +7,24 @@
                         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 padding-top-lg">
                           <?php the_post_thumbnail('my-size', array('class' => 'img img-responsive center-block')); ?>
                         </div>
-                        <div class="col-xs-6">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                           <div class="col-xs-12">
-                            <h4 class="text-left ">
-                              <?php the_title(); ?>a
+                            <h4 class="text-left">
+                              <?php the_title();?>
                             </h4> 
-                            <?php 
-                              the_excerpt(); 
-                            ?>
+                            <div class="visible-md visible-lg">
+                              <?php 
+                                the_excerpt(); 
+                              ?>
+                            </div>
                           </div>
                           <div class="col-xs-12">
-                            <div class="col-xs-4">
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                               <a href="<?php the_permalink(); ?>">
                                   <button type="button" class="btn btn-success">Read More</button>
                               </a>
                             </div>
-                            <div class="col-xs-8">
+                            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                               <small><?php the_time('m.j.Y'); ?> by <?php the_author_posts_link(); ?></small>
                             </div>
                           </div>
