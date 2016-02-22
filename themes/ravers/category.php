@@ -27,12 +27,16 @@
     <div class="row">
       <div class="col-xs-12 margin-bottom">
         <div class="col-xs-6">
-          <h2 class="texto-blanco text-left texto_sombra">#HashTag</h2>
+          <h2 class="texto-blanco text-left texto_sombra visible-md visible-lg">#HashTag</h2>
+          <h4 class="texto-blanco text-left texto_sombra visible-xs visible-sm">#HashTag</h4>
         </div>
         <div class="col-xs-6">
-          <h3 class="texto-blanco text-right">
+          <h3 class="texto-blanco text-right visible-md visible-lg">
             <a href="<?php bloginfo('home');?>/blog" class="a_nolink">Categories</a>
           </h3>
+          <h5 class="texto-blanco text-right visible-xs visible-sm">
+            <a href="<?php bloginfo('home');?>/blog" class="a_nolink">Categories</a>
+          </h5>
         </div>
 
       </div>
