@@ -4,8 +4,8 @@
                   <div class="post">
                     <div class="entry">
                       <div class="col-xs-12 padding-top-lg">
-                        <div class="col-xs-3 padding-top-lg">
-                          <?php the_post_thumbnail('my-size'); ?>
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 padding-top-lg">
+                          <?php the_post_thumbnail('my-size', array('class' => 'img img-responsive center-block')); ?>
                         </div>
                         <div class="col-xs-6">
                           <div class="col-xs-12">
