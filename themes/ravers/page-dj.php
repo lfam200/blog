@@ -238,7 +238,7 @@ Template Name: Página DJ
         <img src="<?php bloginfo('template_directory'); ?>/img/dj-challenge/bc-plaque-icon.png" alt="" class="img img-responsive center-block" width="60%">
         <h4 class="text-center">A PERSONALIZED PLAQUE ON YOUR WATER PROJECT</h4>
       </div>
-      <div class="col-md-12 col-lg-12 margin-top-lg">
+      <div class="col-md-3 col-lg-3 margin-top-lg">
         <img src="<?php bloginfo('template_directory'); ?>/img/dj-challenge/bc-gift-icon.png" alt="" class="img img-responsive center-block" width="20%">
         <h4 class="text-center">THE COMMUNITY THAT YOU HELPED 
           <br>WILL SEND YOU A HANDCRAFT MADE 
@@ -248,34 +248,34 @@ Template Name: Página DJ
     </div>
     <div class="row margin-top sliderbody visible-xs visible-sm">
       <!-- Swiper -->
-      <div class="swiper-container-1">
+      <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="col-md-3 col-lg-3">
+            <div class="col-sm-3">
               <img src="<?php bloginfo('template_directory'); ?>/img/dj-challenge/bc-info-icon.png" alt="" class="img img-responsive center-block" width="70%">
               <h4 class="text-center">PROJECT AND COMMUNITY INFORMATION</h4>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="col-md-3 col-lg-3">
+            <div class="col-sm-3">
               <img src="<?php bloginfo('template_directory'); ?>/img/dj-challenge/bc-gps-icon.png" alt="" class="img img-responsive center-block" width="70%">
               <h4 class="text-center">GPS COORDINATES OF THE PROJECT</h4>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="col-md-3 col-lg-3">
+            <div class="col-sm-3">
               <img src="<?php bloginfo('template_directory'); ?>/img/dj-challenge/bc-tap-icon.png" alt="" class="img img-responsive center-block" width="70%">
               <h4 class="text-center">PHOTOS OF THE PROJECT AND COMMUNITY</h4>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="col-md-3 col-lg-3">
+            <div class="col-sm-3">
               <img src="<?php bloginfo('template_directory'); ?>/img/dj-challenge/bc-plaque-icon.png" alt="" class="img img-responsive center-block" width="70%">
               <h4 class="text-center">A PERSONALIZED PLAQUE ON YOUR WATER PROJECT</h4>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="col-md-3 col-lg-3">
+            <div class="col-sm-3">
               <img src="<?php bloginfo('template_directory'); ?>/img/dj-challenge/bc-gift-icon.png" alt="" class="img img-responsive center-block" width="80%">
               <h4 class="text-center">THE COMMUNITY THAT YOU HELPED WILL SEND YOU A HANDCRAFT MADE BY THEM IN GRATITUDE AND AS A PRESENT FOR YOUR BIRTHDAY.</h4>
             </div>
@@ -284,8 +284,8 @@ Template Name: Página DJ
         <!-- Add Pagination -->
         <!-- <div class="swiper-pagination"></div> -->
         <!-- Add Arrows -->
-        <div class="swiper-button-next-1"></div>
-        <div class="swiper-button-prev-1"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </div>
     <div class="row">
@@ -331,16 +331,7 @@ $(document).ready(function () {
         autoplayDisableOnInteraction: false
     });
 
-  var swiperA = new Swiper('.swiper-container-1', {
-        pagination: '.swiper-pagination-1',
-        nextButton: '.swiper-button-next-1',
-        prevButton: '.swiper-button-prev-1',
-        paginationClickable: true,
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: 4500,
-        autoplayDisableOnInteraction: false
-    });
+  
 });  
 </script>
 </body>
