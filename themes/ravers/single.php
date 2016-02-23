@@ -190,7 +190,7 @@
 </div>
 <?php 
   }else{
-    if($parent == 'EDM clubs around the world'){    
+    if($parent == "EDM Clubs around the world"){    
 ?>
 <div class="pinki img-bg-cal">
   <div class="container">
