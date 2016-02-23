@@ -476,10 +476,18 @@
 
       var directorio = $('#href').val();
       var country = $('#edm_country').val();
+
       var clave = ".bg_"+country;
-
+      
+      if(country.indexOf('-edm-clubs-around-the-world') > 0)
+      {
+        // alert("encontrado")
+        country = country.replace("-edm-clubs-around-the-world","")
+      }
       var dir = directorio+"/img/banderas/"+country+".jpg";
-
+      
+      
+      // alert(dir)
       var status = UrlExists(dir);
      
       if(status){
