@@ -17,7 +17,7 @@ Template Name: Página About
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <h2 class="text-center ">VISION</h2>
 
-          <p class="text-center text-estandar margin-center">Our vision is to make every community in need like in a Rave, with free water refills everywhere.</p>
+          <p class="text-center text-estandar margin-center">Our vision is to provide the same opportunity of access to drinkable water and a decent bathroom in rural communities, schools and orphanages, as we have as a ravers even in a rave.</p>
        </div>
       </div>
     </div>

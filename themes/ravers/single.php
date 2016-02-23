@@ -35,7 +35,7 @@
           <?php the_content(); ?>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-          <div class="t-blue col-xs-4 texto-blanco text-left">FOLLOW HIM</div>
+          <div class="t-blue col-xs-4 texto-blanco text-left">FOLLOW ME</div>
           <div class="title_border col-xs-12"></div>
           <div class="col-xs-12 margin-bottom-lg">
             <?php
@@ -124,7 +124,7 @@
           <?php the_content(); ?>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-          <div class="t-blue col-xs-4 texto-blanco text-left">FOLLOW HIM</div>
+          <div class="t-blue col-xs-4 texto-blanco text-left">SOCIAL MEDIA</div>
           <div class="title_border col-xs-12"></div>
           <div class="col-xs-12 margin-bottom-lg">
             <?php

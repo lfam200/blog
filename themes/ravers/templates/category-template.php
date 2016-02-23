@@ -9,7 +9,10 @@
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                           <div class="col-xs-12">
-                            <h4 class="text-left">
+                            <h4 class="text-left visible-md visible-lg">
+                              <?php the_title();?>
+                            </h4>
+                            <h4 class="text-center visible-xs visible-sm">
                               <?php the_title();?>
                             </h4> 
                             <div class="visible-md visible-lg">
