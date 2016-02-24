@@ -243,13 +243,20 @@
                 <table width="100%" border="1" id="calendario_tabla" class="margin-bottom-lg"> 
                   
                     <tr>
-                      <th class="cal_1 text-center cal-dj-head text-large a_nolink">Sun</th>
-                      <th class="cal_2 text-center cal-dj-head text-large a_nolink">Mon</th>
-                      <th class="cal_3 text-center cal-dj-head text-large a_nolink">Tue</th>
-                      <th class="cal_4 text-center cal-dj-head text-large a_nolink">Wed</th>
-                      <th class="cal_5 text-center cal-dj-head text-large a_nolink">Thu</th>
-                      <th class="cal_6 text-center cal-dj-head text-large a_nolink">Fri</th>
-                      <th class="cal_7 text-center cal-dj-head text-large a_nolink">Sat</th>
+                      <th class="cal_1 text-center cal-dj-head text-large a_nolink visible-xs visible-sm">S</th>
+                      <th class="cal_2 text-center cal-dj-head text-large a_nolink visible-xs visible-sm">M</th>
+                      <th class="cal_3 text-center cal-dj-head text-large a_nolink visible-xs visible-sm">T</th>
+                      <th class="cal_4 text-center cal-dj-head text-large a_nolink visible-xs visible-sm">W</th>
+                      <th class="cal_5 text-center cal-dj-head text-large a_nolink visible-xs visible-sm">T</th>
+                      <th class="cal_6 text-center cal-dj-head text-large a_nolink visible-xs visible-sm">F</th>
+                      <th class="cal_7 text-center cal-dj-head text-large a_nolink visible-xs visible-sm">S</th>
+                      <th class="cal_1 text-center cal-dj-head text-large a_nolink visible-md visible-lg">Sun</th>
+                      <th class="cal_2 text-center cal-dj-head text-large a_nolink visible-md visible-lg">Mon</th>
+                      <th class="cal_3 text-center cal-dj-head text-large a_nolink visible-md visible-lg">Tue</th>
+                      <th class="cal_4 text-center cal-dj-head text-large a_nolink visible-md visible-lg">Wed</th>
+                      <th class="cal_5 text-center cal-dj-head text-large a_nolink visible-md visible-lg">Thu</th>
+                      <th class="cal_6 text-center cal-dj-head text-large a_nolink visible-md visible-lg">Fri</th>
+                      <th class="cal_7 text-center cal-dj-head text-large a_nolink visible-md visible-lg">Sat</th>
                     </tr>
                   
               <?php 
