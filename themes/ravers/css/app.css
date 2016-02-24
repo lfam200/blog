@@ -346,6 +346,11 @@ body{
   background-size: cover;
   min-height: 55em;
 }
+.bg-movil{
+  background: url('../img/dj-challenge/pledge/bg-movil-pledge.png') right no-repeat;
+  background-size: cover;
+  min-height: 30em;
+}
 
 .bg-form{
   background: rgba(0,0,0,0.3);
@@ -1027,4 +1032,8 @@ canvas {
   text-shadow: 1px 2px #000;
 }
 
+
+.shadow-white{
+  text-shadow: 1px 2px 2px #fff;
+}
 

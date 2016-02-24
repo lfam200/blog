@@ -4,21 +4,22 @@ Template Name: Página DJ Pledge
 */
 ?>
 <?php get_header(); ?>
-<div class="white">
+<div class="white bg-movil">
   <div class="container">
     <div class="row">
 
-      <div class="col-xs-5 col-xs-offset-1 margin-top">
-        <p><h3 class="margin-top-lg">Wheter you just want to pledge your birthday to your fans or you will throw a private party, if you accept the challenge you can rise your birthday gifts to bring clean water in schools, orphanages an communities around the world. You just have to choose which tipe of project you'd like to support.</h3 class="margin-top-lg"></p>
+      <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1 margin-top">
+        <h3 class="margin-top-lg margin-bottom-lg text-justify shadow-white">Wheter you just want to pledge your birthday to your fans or you will throw a private party, if you accept the challenge you can rise your birthday gifts to bring clean water in schools, orphanages an communities around the world. You just have to choose which tipe of project you'd like to support.</h3 class="margin-top-lg">
       </div>
-      <div class="col-xs-5 col-xs-offset-1">
+      <!-- <div class="col-xs-5 col-xs-offset-1 visible-md visible-lg">
         <img src="<?php bloginfo('template_directory'); ?>/img/movil.png" alt="" class="img img-responsive">
-      </div>
+      </div> -->
     </div>
   </div>
 </div>
 <div class="green">
-  <img src="<?php bloginfo('template_directory'); ?>/img/dj1.png" alt="" class="img img-responsive" width="100%">
+  <img src="<?php bloginfo('template_directory'); ?>/img/dj-challenge/pledge/bg-pledge-pledge.png" alt="" class="img img-responsive visible-md visible-lg" width="100%">
+  <img src="<?php bloginfo('template_directory'); ?>/img/dj-challenge/pledge/bg-pledge-pledge-sm.png" alt="" class="img img-responsive visible-xs visible-sm" width="100%">
 </div>
 <div class="green">
   <img src="<?php bloginfo('template_directory'); ?>/img/dj2.png" alt="" class="img img-responsive" width="100%">
