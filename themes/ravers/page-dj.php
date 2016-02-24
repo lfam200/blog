@@ -244,7 +244,7 @@ Template Name: Página DJ
         <img src="<?php bloginfo('template_directory'); ?>/img/dj-challenge/bc-plaque-icon.png" alt="" class="img img-responsive center-block" width="60%">
         <h4 class="text-center">A PERSONALIZED PLAQUE ON YOUR WATER PROJECT</h4>
       </div>
-      <div class="col-md-3 col-lg-3 margin-top-lg">
+      <div class="col-md-12 col-lg-12 margin-top-lg">
         <img src="<?php bloginfo('template_directory'); ?>/img/dj-challenge/bc-gift-icon.png" alt="" class="img img-responsive center-block" width="20%">
         <h4 class="text-center">THE COMMUNITY THAT YOU HELPED 
           <br>WILL SEND YOU A HANDCRAFT MADE 
