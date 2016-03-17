@@ -165,7 +165,10 @@ Template Name: Página DJ Pledge
           <div class="swiper-slide">
             <div class="col-sm-3">
               <img src="<?php bloginfo('template_directory'); ?>/img/dj-challenge/bc-gift-icon.png" alt="" class="img img-responsive center-block" width="80%">
-              <h4 class="text-center">THE COMMUNITY THAT YOU HELPED WILL SEND YOU A HANDCRAFT MADE BY THEM IN GRATITUDE AND AS A PRESENT FOR YOUR BIRTHDAY.</h4>
+              <h4 class="text-center">THE COMMUNITY THAT YOU HELPED 
+          <br>WILL SEND YOU A HANDCRAFT MADE 
+          <br>BY THEM IN GRATITUDE AND AS A 
+          <br>PRESENT FOR YOUR BIRTHDAY.</h4>
             </div>
           </div>
         </div>
