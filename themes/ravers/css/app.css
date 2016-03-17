@@ -366,6 +366,12 @@ body{
   min-height: 45em;
 }
 
+.bg_january,.bg_february,.bg_march,.bg_april,.bg_may,.bg_june,.bg_july,.bg_august,.bg_september,.bg_october,.bg_november,.bg_december{
+  background: url('../img/bg-calendar.jpg') center no-repeat;
+  background-size: cover;
+  min-height: 45em;
+}
+
 .bg_update{
     background: url('../img/bg-update.jpg') center no-repeat;
     background-size: cover;
