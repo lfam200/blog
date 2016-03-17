@@ -12,7 +12,7 @@ Template Name: Página About
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <h2 class="text-center ">MISSION</h2>
           
-          <p class="text-center text-estandar margin-center">Our mission is to fund projects of water, hygiene and sanitation worldwide. Bringing free water refills for every community in need.</p>
+          <p class="text-center text-estandar margin-center">Our mission is to fund projects of water, hygiene and sanitation worldwide. Bringing free water refill stations for every community in need.</p>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <h2 class="text-center ">VISION</h2>
