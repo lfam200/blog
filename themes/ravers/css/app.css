@@ -374,7 +374,7 @@ body{
 .bg_dj-birthday-calendar{
     background: url('../img/bg-djcalendar.jpg') center no-repeat;
     background-size: cover;
-    min-height: 35em;
+    min-height: 45em;
 }
 .vertical{
   margin-top: 8em;
