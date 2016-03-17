@@ -364,6 +364,12 @@ body{
   background-size: cover;
   min-height: 45em;
 }
+
+.bg_upload{
+    background: url('../img/bg-upload.jpg') center no-repeat;
+    background-size: cover;
+    min-height: 35em;
+}
 .vertical{
   margin-top: 8em;
   
