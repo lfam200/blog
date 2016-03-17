@@ -162,21 +162,21 @@ Template Name: Página DJ
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <h1 class="texto-blanco text-center margin-top visible-md visible-lg margin">The Challenge is to Develop 300 water <br>projects in 2016.</h1>
-        <h3 class="texto-blanco text-center margin-top visible-sm visible-xs">The Challenge is to Develop 300 water projects in 2016.</h3>
+        <h1 class="texto-blanco text-center margin-top visible-md visible-lg margin">THE CHALLENGE IS TO FINISH 25 WATER <br> PROJECTS IN 2016</h1>
+        <h3 class="texto-blanco text-center margin-top visible-sm visible-xs">THE CHALLENGE IS TO FINISH 25 WATER PROJECTS IN 2016</h3>
       </div>
     </div>
     <div class="row margin-top-lg visible-md visible-lg">
       <div class="col-xs-3 col-xs-offset-2">
-        <h3 class="text-center texto-blanco margin-bottom">Build Wells + water purifiers</h3>
+        <h3 class="text-center texto-blanco margin-bottom">_______ <br> _______ </h3>
         <img src="<?php bloginfo('template_directory'); ?>/img/dj-challenge/dj-wells.jpg" alt="Build Wells" width="80%" class="center-block img-circle" >
-        <h4 class=" text-center texto-blanco margin-top-lg margin-bottom-lg">There is thousands of water well projects  stalled because other organizations run out of funds. Let's help fulfill those water projects with your gifts.</h4>
+        <h4 class=" text-center texto-blanco margin-top-lg margin-bottom-lg">Drill wells plus SAWYER Purifiers for communities in rural areas</h4>
       </div>
       
       <div class="col-xs-3 col-xs-offset-2">
         <h3 class="text-center texto-blanco margin-bottom">Free water refill stations</h3>
         <img src="<?php bloginfo('template_directory'); ?>/img/dj-challenge/dj-elkay.jpg" alt="Refill Stations" width="80%" class="center-block img-circle" >
-        <h4 class=" text-center texto-blanco margin-top-lg margin-bottom-lg">There is thousands of water well projects  stalled because other organizations run out of funds. Let's help fulfill those water projects with your gifts.</h4>
+        <h4 class=" text-center texto-blanco margin-top-lg margin-bottom-lg">Install SAWYER water purifier fountains in orphanages or schools.</h4>
       </div>
     </div>
     <div class="row margin-top sliderbody visible-xs visible-sm">
@@ -185,16 +185,16 @@ Template Name: Página DJ
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="col-sm-3">
-              <h3 class="text-center texto-blanco">Build Wells + water purifiers</h3>
+              <!-- <h3 class="text-center texto-blanco">Build Wells + water purifiers</h3> -->
               <img src="<?php bloginfo('template_directory'); ?>/img/dj-challenge/dj-wells.jpg" alt="@janarubiomiller" width="70%" class="center-block img-circle" >
-              <h4 class=" text-center texto-blanco">There is thousands of water well projects  stalled because other organizations run out of funds. Let's help fulfill those water projects with your gifts.</h4>
+              <h4 class=" text-center texto-blanco">Drill wells plus SAWYER Purifiers for communities in rural areas.</h4>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="col-sm-3">
               <h3 class="text-center texto-blanco">Free water refill stations</h3>
               <img src="<?php bloginfo('template_directory'); ?>/img/dj-challenge/dj-elkay.jpg" alt="@alevittoriag" width="70%" class="center-block img-circle" >
-              <h4 class=" text-center texto-blanco">There is thousands of water well projects  stalled because other organizations run out of funds. Let's help fulfill those water projects with your gifts.</h4>
+              <h4 class=" text-center texto-blanco">Install SAWYER water purifier fountains in orphanages or schools.</h4>
             </div>
           </div>
         </div>
@@ -208,6 +208,7 @@ Template Name: Página DJ
     <div class="row">
       <div class="col-xs-12 margin-top-lg margin-bottom-lg">
         <a href="<?php bloginfo('home'); ?>/dj-birthday/dj-birthday-pledge">
+          <span class="center-block text-center"><small>Let´s help fulfill those wáter projects with you gifts:</small></span>
           <button class="btn btn-lg btn-primary text-center center-block btn-lg">I ACCEPT THE CHALLENGE</button>
         </a>
       </div>
@@ -246,10 +247,7 @@ Template Name: Página DJ
       </div>
       <div class="col-md-12 col-lg-12 margin-top-lg">
         <img src="<?php bloginfo('template_directory'); ?>/img/dj-challenge/bc-gift-icon.png" alt="" class="img img-responsive center-block" width="20%">
-        <h4 class="text-center">THE COMMUNITY THAT YOU HELPED 
-          <br>WILL SEND YOU A HANDCRAFT MADE 
-          <br>BY THEM IN GRATITUDE AND AS A 
-          <br>PRESENT FOR YOUR BIRTHDAY.</h4>
+        <h4 class="text-center text-uppercase">We will send you a <br> handmade birthday <br>present from de community <br> members that you helped.</h4>
       </div>
     </div>
     <div class="row margin-top sliderbody visible-xs visible-sm">
@@ -310,6 +308,7 @@ Template Name: Página DJ
     </div>
   </div>
 </div>
+
 <div class="white">
   <img src="<?php bloginfo('template_directory'); ?>/img/dj13.png" alt="" class="img img-responsive" width="100%">
 </div>

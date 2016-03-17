@@ -27,13 +27,13 @@
     <div class="row">
       <div class="col-xs-12 margin-bottom">
         <div class="col-xs-6">
-          <h2 class="texto-blanco text-left texto_sombra visible-md visible-lg">#HashTag</h2>
-          <h4 class="texto-blanco text-left texto_sombra visible-xs visible-sm">#HashTag</h4>
+          <h3 class="texto-blanco text-left texto_sombra visible-md visible-lg">#DjsUnited4Water #DjBdayChallenge</h3>
+          <h4 class="texto-blanco text-left texto_sombra visible-xs visible-sm">#DjsUnited4Water #DjBdayChallenge</h4>
         </div>
         <div class="col-xs-6">
-          <h3 class="texto-blanco text-right visible-md visible-lg">
+          <h4 class="texto-blanco text-right visible-md visible-lg">
             <a href="<?php bloginfo('home');?>/blog" class="a_nolink">Categories</a>
-          </h3>
+          </h4>
           <h5 class="texto-blanco text-right visible-xs visible-sm">
             <a href="<?php bloginfo('home');?>/blog" class="a_nolink">Categories</a>
           </h5>
@@ -56,7 +56,7 @@
         <!-- videos water sanitation programs -->
         <div class="cat col-xs-12 col-sm-12 col-md-4 col-lg-4 texto-blanco text-left">Water accesibility program</div>
         <div class="col-md-4 col-lg-4 visible-md visible-lg"></div>
-        <div class="cat col-md-4 col-lg-4 col-md-offset-2 col-lg-offset-2 texto-blanco text-right visible-md visible-lg">Sanitation & hygiene project</div>
+        <div class="cat col-md-4 col-lg-4 col-md-offset-2 col-lg-offset-2 texto-blanco text-right visible-md visible-lg">Sanitation & hygiene program</div>
         <div class="title_border col-xs-12"></div>
         <!-- video 1 -->
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 margin-top">
@@ -71,7 +71,7 @@
         </div>
         <div class="col-xs-2 visible-md visible-lg"></div> 
         <!-- video 2 -->
-        <div class="cat  texto-blanco col-xs-12 col-sm-12 col-md-4 col-lg-4 text-left visible-xs visible-sm">Sanitation & hygiene project</div>
+        <div class="cat  texto-blanco col-xs-12 col-sm-12 col-md-4 col-lg-4 text-left visible-xs visible-sm">Sanitation & hygiene program</div>
         <div class="title_border col-xs-12 visible-xs visible-sm"></div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 margin-top">
           <div class="embed-responsive embed-responsive-16by9">

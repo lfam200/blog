@@ -27,14 +27,14 @@ Template Name: Página Programs
       </div>
       <div class="row margin-top-lg margin-bottom-lg">
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <h4 class="title-white text-center" >Water accessibility program</h4>
+                    <h4 class="title-white text-center text-uppercase" >Water accessibility program</h4>
                     <div class="embed-responsive embed-responsive-16by9">
                       <iframe class="center-block shadow embed-responsive-item" width="80%" src="https://www.youtube.com/embed/qOLZTZpjXQo" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <ul>
-                        <li class="title-white text-justify  margin-right margin-top">This program will help to build wells and also provide  water filters for those communities and schools who have pipes already installed.</li>
-                        <li class="title-white text-justify  margin-right margin-top">For the schools in poor communities we will build free water refill stations with "elkay water filters". Those filters will also eradicate the pollution of plástic bottles.</li>
-                        <li class="title-white text-justify  margin-right margin-top">We will also distribute, portable water filters for schools and communities with no pipes. These filters can give clean water for one person for an entire year.</li>
+                        <li class="title-white text-justify  margin-right margin-top">This program aims to provide access to potable water to rural communities, schools and orphanages in developing countries using the Sawyer technology.</li>
+                        <li class="title-white text-justify  margin-right margin-top">The Sawyer Water Filtration System removes the 99.99999% of bacteria and 99.9999% protozoa.  These filters use hollow fiber membrane technology and will filter out anything above 0.1 microns.</li>
+                        <li class="title-white text-justify  margin-right margin-top">Each type of purifier, can filter at least 1 MILLION GALLONS OF WATER.</li>
                     </ul>
                     <div class="col-xs-12 text-center margin-top-lg ">
                         <a href="<?php bloginfo('home'); ?>/category/donate#edm_name">
@@ -43,7 +43,7 @@ Template Name: Página Programs
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <h4 class="title-white text-center" >Sanitation & hygiene program</h4>
+                    <h4 class="title-white text-center text-uppercase" >Sanitation & hygiene program</h4>
                     <div class="embed-responsive embed-responsive-16by9">
                       <iframe class="center-block shadow embed-responsive-item" width="80%" src="https://www.youtube.com/embed/7x0Y9eIwurw" frameborder="0" allowfullscreen></iframe>
                     </div>
