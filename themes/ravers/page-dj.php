@@ -192,7 +192,7 @@ Template Name: Página DJ
           </div>
           <div class="swiper-slide">
             <div class="col-sm-3">
-              <h3 class="text-center texto-blanco">Free water refill stations</h3>
+              <!-- <h3 class="text-center texto-blanco">Free water refill stations</h3> -->
               <img src="<?php bloginfo('template_directory'); ?>/img/dj-challenge/dj-elkay.jpg" alt="@alevittoriag" width="70%" class="center-block img-circle" >
               <h4 class=" text-center texto-blanco">Install SAWYER water purifier fountains in orphanages or schools.</h4>
             </div>

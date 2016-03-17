@@ -35,9 +35,9 @@ Template Name: Página DJ Pledge
     </div>
     <div class="row margin-top-lg visible-md visible-lg">
       <div class="col-xs-3 col-xs-offset-2">
-        <h3 class="text-center texto-blanco margin-bottom">Build Wells + water purifiers</h3>
+        <!-- <h3 class="text-center texto-blanco margin-bottom">Build Wells + water purifiers</h3> -->
         <img src="<?php bloginfo('template_directory'); ?>/img/dj-challenge/dj-wells.jpg" alt="Build Wells" width="80%" class="center-block img-circle" >
-        <h4 class=" text-center texto-blanco margin-top-lg margin-bottom-lg">There is thousands of water well projects  stalled because other organizations run out of funds. Let's help fulfill those water projects with your gifts.</h4>
+        <h4 class=" text-center texto-blanco margin-top-lg margin-bottom-lg">Drill wells plus SAWYER Purifiers for communities in rural areas.</h4>
         <div class="col-xs-12 margin-bottom-lg">
           <button class="btn btn-default btn-lg center-block">Pledge my birthday</button>
         </div>
@@ -46,9 +46,9 @@ Template Name: Página DJ Pledge
         </div>
       </div>
       <div class="col-xs-3 col-xs-offset-2">
-        <h3 class="text-center texto-blanco margin-bottom">Free water refill stations</h3>
+        <!-- <h3 class="text-center texto-blanco margin-bottom">Free water refill stations</h3> -->
         <img src="<?php bloginfo('template_directory'); ?>/img/dj-challenge/dj-elkay.jpg" alt="Refill Stations" width="80%" class="center-block img-circle" >
-        <h4 class=" text-center texto-blanco margin-top-lg margin-bottom-lg">There is thousands of water well projects  stalled because other organizations run out of funds. Let's help fulfill those water projects with your gifts.</h4>
+        <h4 class=" text-center texto-blanco margin-top-lg margin-bottom-lg">Install SAWYER water purifier fountains in orphanages or schools.</h4>
         <div class="col-xs-12 margin-bottom-lg">
           <button class="btn btn-default btn-lg center-block">Pledge my birthday</button>
         </div>
@@ -63,9 +63,9 @@ Template Name: Página DJ Pledge
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="col-sm-3">
-              <h3 class="text-center texto-blanco">Build Wells + water purifiers</h3>
+              <!-- <h3 class="text-center texto-blanco">Build Wells + water purifiers</h3> -->
               <img src="<?php bloginfo('template_directory'); ?>/img/dj-challenge/dj-wells.jpg" alt="" width="70%" class="center-block img-circle" >
-              <h4 class=" text-center texto-blanco">There is thousands of water well projects  stalled because other organizations run out of funds. Let's help fulfill those water projects with your gifts.</h4>
+              <h4 class=" text-center texto-blanco">Drill wells plus SAWYER Purifiers for communities in rural areas.</h4>
               <div class="col-xs-12 margin-bottom-lg">
                 <button class="btn btn-default btn-lg center-block">Pledge my birthday</button>
               </div>
@@ -76,9 +76,9 @@ Template Name: Página DJ Pledge
           </div>
           <div class="swiper-slide">
             <div class="col-sm-3">
-              <h3 class="text-center texto-blanco">Free water refill stations</h3>
+              <!-- <h3 class="text-center texto-blanco">Free water refill stations</h3> -->
               <img src="<?php bloginfo('template_directory'); ?>/img/dj-challenge/dj-elkay.jpg" alt="" width="70%" class="center-block img-circle" >
-              <h4 class=" text-center texto-blanco">There is thousands of water well projects  stalled because other organizations run out of funds. Let's help fulfill those water projects with your gifts.</h4>
+              <h4 class=" text-center texto-blanco">Install SAWYER water purifier fountains in orphanages or schools.</h4>
               <div class="col-xs-12 margin-bottom-lg">
                 <button class="btn btn-default btn-lg center-block">Pledge my birthday</button>
               </div>
