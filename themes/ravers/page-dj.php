@@ -168,7 +168,7 @@ Template Name: Página DJ
     </div>
     <div class="row margin-top-lg visible-md visible-lg">
       <div class="col-xs-3 col-xs-offset-2">
-        <h3 class="text-center texto-blanco margin-bottom">_______ <br> _______ </h3>
+        <h3 class="text-center texto-blanco margin-bottom">&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;</h3>
         <img src="<?php bloginfo('template_directory'); ?>/img/dj-challenge/dj-wells.jpg" alt="Build Wells" width="80%" class="center-block img-circle" >
         <h4 class=" text-center texto-blanco margin-top-lg margin-bottom-lg">Drill wells plus SAWYER Purifiers for communities in rural areas</h4>
       </div>
