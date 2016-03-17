@@ -53,7 +53,7 @@ Template Name: Página DJ Pledge
           <button class="btn btn-default btn-lg center-block">Pledge my birthday</button>
         </div>
         <div class="col-xs-12 margin-bottom-lg">
-          <button class="btn btn-default btn-lg center-block">Pledge my birthday</button>
+          <button class="btn btn-default btn-lg center-block">I have a Private Party</button>
         </div>
       </div>
     </div>
@@ -70,7 +70,7 @@ Template Name: Página DJ Pledge
                 <button class="btn btn-default btn-lg center-block">Pledge my birthday</button>
               </div>
               <div class="col-xs-12 margin-bottom-lg">
-                <button class="btn btn-default btn-lg center-block">Pledge my birthday</button>
+                <button class="btn btn-default btn-lg center-block">I have a Private Party</button>
               </div>
             </div>
           </div>
