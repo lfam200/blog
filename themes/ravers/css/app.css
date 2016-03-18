@@ -378,6 +378,12 @@ body{
     min-height: 35em;
 }
 
+.bg_water-sanitation-programs{
+    background: url('../img/bg-water-sanitation-programs.jpg') center no-repeat;
+    background-size: cover;
+    min-height: 35em;
+}
+
 .bg_dj-birthday-calendar{
     background: url('../img/bg-djcalendar.jpg') center no-repeat;
     background-size: cover;
