@@ -70,7 +70,7 @@ Template Name: Página Programs
             <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
               <p class="text-center text-estandar">Our aims are to help as many people as we can around the world. Now we're working on  alliances with organizations that needs your support. Join us!</p>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+            <div class="col-xs-12">
                <!-- <img src="<?php bloginfo('template_directory'); ?>/img/mapablue.png" alt="" width="100%" class="center-block margin-bottom-lg" > -->
                <?php echo do_shortcode('[wpgmza id="1"]'); ?>
             </div>
