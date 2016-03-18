@@ -3,7 +3,7 @@
 <?php 
   $categoria = get_the_category();
   $parent = get_cat_name($categoria[0]->category_parent);
-  echo $parent;
+  // echo $parent;
   if($parent == 'January' || $parent == 'February' || $parent == 'March' || $parent == 'April' || $parent == 'May' || $parent == 'June' || $parent == 'July' || $parent == 'August' || $parent == 'September' || $parent == 'October' || $parent == 'November' || $parent == 'December'){
 ?>
 <div class="pinki img-bg-cal">
