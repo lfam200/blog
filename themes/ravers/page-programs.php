@@ -72,7 +72,7 @@ Template Name: Página Programs
             </div>
             <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
                <!-- <img src="<?php bloginfo('template_directory'); ?>/img/mapablue.png" alt="" width="100%" class="center-block margin-bottom-lg" > -->
-               <?php echo do_shortcode([wpgmza id="1"] ); ?>
+               <?php echo do_shortcode('[wpgmza id="1"]'); ?>
             </div>
         </div>
         
