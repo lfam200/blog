@@ -58,7 +58,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12">
           <p class="texto-oscuro">
-          International Ravers is a 501 (c)(3) PENDING Non Profit Organization • <a href="<?php bloginfo('home'); ?>/privacy-policy">Privacy Policy</a> • <a href="<?php bloginfo('home'); ?>/terms-of-use">Terms of Use</a> • ©2015 • Made with ❤ in CA. </p></div>
+          International Ravers Charity is a 501 (c)(3) Non Profit Organization under the sponsorship of Green Wave • <a href="<?php bloginfo('home'); ?>/privacy-policy">Privacy Policy</a> • <a href="<?php bloginfo('home'); ?>/terms-of-use">Terms of Use</a> • ©2015 • Made with ❤ in CA. </p></div>
       </div>
     </div>
   </div>

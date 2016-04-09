@@ -81,20 +81,31 @@ Template Name: Página Programs
   <div class="yellow">
     <div class="container">
       <div class="row margin-bottom-lg">
-        
-        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 margin-top">
-          <h2 class="raver-text text-left visible-md visible-lg">VOLUNTEERING</h2>
-          <h3 class="raver-text text-left visible-xs visible-sm ">VOLUNTEERING</h3>
-          
-          <p class="text-justify margin-bottom-lg">When you volunteer, you agree to give your time, labor, and skills as a means of helping someone else, Volunteering is a great way for a foreigner to fully immerse himself/herself into global reality and to work with local people to make a positive change in their lives. <br><br>Just let us know what kind of continent you'd like to travel and which type of causes want to support. Then different organizations may contact you and give you information about their aid programs.</p>
+      <h2 class="text-center visible-lg margin-top"><strong>Our Solutions</h2>
+        <h3 class="text-center visible-sm visible-md"><strong>Our Solutions</h3>
+        <h3 class="text-center visible-xs bg-imagen"><strong>Our Solutions</h3>
+        <div class="col-lg-2 col-lg-offset-1">
+          <img src="<?php bloginfo('template_directory' ); ?>/img/p1.png" class="img img-responsive center-block margin-top img-circle border-solid" width="70%" alt="">
+          <h4 class="text-center">Water Pumps</h4>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-          <img src="<?php bloginfo('template_directory'); ?>/img/volunteers-01.png" alt="Volunteers" width="60%" class="center-block vertical_3 visible-md visible-lg" >
-          <img src="<?php bloginfo('template_directory'); ?>/img/volunteers-01.png" alt="Volunteers" width="60%" class="center-block visible-xs visible-sm" >
+        <div class="col-lg-2">
+          <img src="<?php bloginfo('template_directory' ); ?>/img/p5.png" class="img img-responsive center-block margin-top img-circle border-solid" width="70%" alt="">
+          <h4 class="text-center">Drilled Wells</h4>
         </div>
-        <div class="col-xs-12 text-left margin-top">
-          <a href="<?php bloginfo('home'); ?>/volunteers"><button type="button" class="btn btn-primary btn-lg btn-custom visible-md visible-lg">Be a volunteer,</button></a>
-          <a href="<?php bloginfo('home'); ?>/volunteers"><button type="button" class="btn btn-primary btn-lg btn-custom center-block visible-xs visible-sm">Be a volunteer,</button></a>
+        <div class="col-lg-2">
+          <img src="<?php bloginfo('template_directory' ); ?>/img/p2.png" class="img img-responsive center-block margin-top img-circle border-solid" width="70%" alt="">
+          <h4 class="text-center">Water Pipes</h4>
+
+        </div>
+        <div class="col-lg-2">
+          <img src="<?php bloginfo('template_directory' ); ?>/img/p3.png" class="img img-responsive center-block margin-top img-circle border-solid" width="70%" alt="">
+          <h4 class="text-center">Windmill Aqueducts</h4>
+
+        </div>
+        <div class="col-lg-2">
+          <img src="<?php bloginfo('template_directory' ); ?>/img/p4.png" class="img img-responsive center-block margin-top img-circle border-solid" width="70%" alt="">
+          <h4 class="text-center">Sawyer Technology</h4>
+
         </div>
       </div>
       
