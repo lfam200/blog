@@ -81,36 +81,95 @@ Template Name: Página Programs
   <div class="yellow">
     <div class="container">
       <div class="row margin-bottom-lg">
-      <h2 class="text-center visible-lg margin-top"><strong>Our Solutions</h2>
+        <h2 class="text-center visible-lg margin-top"><strong>Our Solutions</h2>
         <h3 class="text-center visible-sm visible-md"><strong>Our Solutions</h3>
         <h3 class="text-center visible-xs bg-imagen"><strong>Our Solutions</h3>
-        <div class="col-lg-2 col-lg-offset-1">
-          <img src="<?php bloginfo('template_directory' ); ?>/img/p1.png" class="img img-responsive center-block margin-top img-circle border-solid" width="70%" alt="">
-          <h4 class="text-center">Water Pumps</h4>
+        <div class="col-xs-12 visible-md visible-lg">
+          <div class="col-md-2 col-lg-2 col-md-offset-1 col-lg-offset-1">
+            <img src="<?php bloginfo('template_directory' ); ?>/img/p1.png" class="img img-responsive center-block margin-top img-circle border-solid" width="70%" alt="">
+            <h4 class="text-center">Water Pumps</h4>
+          </div>
+          <div class="col-md-2 col-lg-2">
+            <img src="<?php bloginfo('template_directory' ); ?>/img/p5.png" class="img img-responsive center-block margin-top img-circle border-solid" width="70%" alt="">
+            <h4 class="text-center">Drilled Wells</h4>
+          </div>
+          <div class="col-md-2 col-lg-2">
+            <img src="<?php bloginfo('template_directory' ); ?>/img/p2.png" class="img img-responsive center-block margin-top img-circle border-solid" width="70%" alt="">
+            <h4 class="text-center">Water Pipes</h4>
+          </div>
+          <div class="col-md-2 col-lg-2">
+            <img src="<?php bloginfo('template_directory' ); ?>/img/p3.png" class="img img-responsive center-block margin-top img-circle border-solid" width="70%" alt="">
+            <h4 class="text-center">Windmill Aqueducts</h4>
+          </div>
+          <div class="col-md-2 col-lg-2">
+            <img src="<?php bloginfo('template_directory' ); ?>/img/p4.png" class="img img-responsive center-block margin-top img-circle border-solid" width="70%" alt="">
+            <h4 class="text-center">Sawyer Technology</h4>
+          </div>
         </div>
-        <div class="col-lg-2">
-          <img src="<?php bloginfo('template_directory' ); ?>/img/p5.png" class="img img-responsive center-block margin-top img-circle border-solid" width="70%" alt="">
-          <h4 class="text-center">Drilled Wells</h4>
-        </div>
-        <div class="col-lg-2">
-          <img src="<?php bloginfo('template_directory' ); ?>/img/p2.png" class="img img-responsive center-block margin-top img-circle border-solid" width="70%" alt="">
-          <h4 class="text-center">Water Pipes</h4>
-
-        </div>
-        <div class="col-lg-2">
-          <img src="<?php bloginfo('template_directory' ); ?>/img/p3.png" class="img img-responsive center-block margin-top img-circle border-solid" width="70%" alt="">
-          <h4 class="text-center">Windmill Aqueducts</h4>
-
-        </div>
-        <div class="col-lg-2">
-          <img src="<?php bloginfo('template_directory' ); ?>/img/p4.png" class="img img-responsive center-block margin-top img-circle border-solid" width="70%" alt="">
-          <h4 class="text-center">Sawyer Technology</h4>
-
+        <div class="col-xs-12 sliderbody visible-xs visible-sm">
+      <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="col-md-2 col-lg-2 col-lg-offset-1">
+                  <img src="<?php bloginfo('template_directory' ); ?>/img/p1.png" class="img img-responsive center-block margin-top img-circle border-solid" width="70%" alt="">
+                  <h4 class="text-center">Water Pumps</h4>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col-md-2 col-lg-2">
+                  <img src="<?php bloginfo('template_directory' ); ?>/img/p5.png" class="img img-responsive center-block margin-top img-circle border-solid" width="70%" alt="">
+                  <h4 class="text-center">Drilled Wells</h4>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col-md-2 col-lg-2">
+                  <img src="<?php bloginfo('template_directory' ); ?>/img/p2.png" class="img img-responsive center-block margin-top img-circle border-solid" width="70%" alt="">
+                  <h4 class="text-center">Water Pipes</h4>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col-md-2 col-lg-2">
+                  <img src="<?php bloginfo('template_directory' ); ?>/img/p3.png" class="img img-responsive center-block margin-top img-circle border-solid" width="70%" alt="">
+                  <h4 class="text-center">Windmill Aqueducts</h4>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col-md-2 col-lg-2">
+                  <img src="<?php bloginfo('template_directory' ); ?>/img/p4.png" class="img img-responsive center-block margin-top img-circle border-solid" width="70%" alt="">
+                  <h4 class="text-center">Sawyer Technology</h4>
+                </div>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
         </div>
       </div>
-      
     </div>
   </div>  
 <?php get_footer(); ?>
+
+<script src="<?php bloginfo('template_directory'); ?>/js/swiper.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+$(document).ready(function () {
+  var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 4500,
+        autoplayDisableOnInteraction: false
+    });
+
+  
+});  
+</script>
 </body>
 </html>
